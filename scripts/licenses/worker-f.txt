@@ -1,0 +1,42 @@
+worker-f 0.1.20 — 上游声明与许可文件缺口
+
+Canonical repository: https://gitlab.com/catamphetamine/worker-f
+Version tag: v0.1.20
+Verified tag commit: 32742a0f8a57f19968c73539a09ecb3606efa3f9
+Package metadata: https://gitlab.com/catamphetamine/worker-f/-/blob/32742a0f8a57f19968c73539a09ecb3606efa3f9/package.json
+Verified on: 2026-10-25
+
+该版本 package.json 声明 license 为 MIT，author 元数据为
+catamphetamine <purecatamphetamine@gmail.com>。
+
+安装的 npm 包及上述版本的 canonical 源码均未提供独立 LICENSE 文件，
+也未发现完整版权 notice。author 元数据不在此被改写为版权 notice，
+不推定版权年份或版权人。以下是上游声明的 MIT 许可证的标准条款参考，
+不是声称从 worker-f 该版本 LICENSE 文件取得的声明。
+
+标准文本来源：
+https://github.com/spdx/license-list-data/blob/main/text/MIT.txt
+Verified source blob: d817195dad53ec992418c28ffca5fbd1cd86502a
+其中 <year> 和 <copyright holders> 保留为标准模板的占位符，
+不代表 worker-f 已提供这些字段。
+
+MIT 标准条款参考（上游声明的许可证）
+
+MIT License
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,899 @@
+{
+  "checkedOn": "2026-10-25",
+  "scope": "2013审定版封面、目录与词汇页；不等于版权页版次年月或新版",
+  "sources": [
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/0.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/1.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/75.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/76.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/77.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/78.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/79.jpg",
+    "https://images.szxuexiao.com/uploadimages/keben2022/bsdb4njyy_s2013/80.jpg"
+  ],
+  "normalization": "动词括号中的进行式记在 inflection；学习英文使用原形；星号记录为 starred，不作为英文。音标沿用候选词典，未核验教材录音。",
+  "entries": [
+    {
+      "id": "bnu-2013-g4-upper-u1-sign",
+      "en": "sign",
+      "zh": "标志，指示牌",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-left",
+      "en": "left",
+      "zh": "左；向左",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-right",
+      "en": "right",
+      "zh": "右；向右",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-litter",
+      "en": "litter",
+      "zh": "乱丢垃圾",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-sorry",
+      "en": "sorry",
+      "zh": "对不起",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-very",
+      "en": "very",
+      "zh": "很，非常",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-smoking",
+      "en": "smoking",
+      "zh": "吸烟，抽烟",
+      "unit": "Unit 1 Signs",
+      "page": 2,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-touch",
+      "en": "touch",
+      "zh": "触摸",
+      "unit": "Unit 1 Signs",
+      "page": 3,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-food",
+      "en": "food",
+      "zh": "食物",
+      "unit": "Unit 1 Signs",
+      "page": 3,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-parking",
+      "en": "parking",
+      "zh": "停车",
+      "unit": "Unit 1 Signs",
+      "page": 3,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-camera",
+      "en": "camera",
+      "zh": "照相机",
+      "unit": "Unit 1 Signs",
+      "page": 3,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-worry",
+      "en": "worry",
+      "zh": "担心",
+      "unit": "Unit 1 Signs",
+      "page": 4,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-afraid",
+      "en": "afraid",
+      "zh": "害怕的",
+      "unit": "Unit 1 Signs",
+      "page": 4,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-cry",
+      "en": "cry",
+      "zh": "哭",
+      "unit": "Unit 1 Signs",
+      "page": 4,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u1-try",
+      "en": "try",
+      "zh": "尝试",
+      "unit": "Unit 1 Signs",
+      "page": 4,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-shopping",
+      "en": "shopping",
+      "zh": "购物",
+      "unit": "Unit 2 Shopping",
+      "page": 14,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-how-much",
+      "en": "how much",
+      "zh": "多少钱",
+      "unit": "Unit 2 Shopping",
+      "page": 14,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-train",
+      "en": "train",
+      "zh": "火车",
+      "unit": "Unit 2 Shopping",
+      "page": 14,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-plane",
+      "en": "plane",
+      "zh": "飞机",
+      "unit": "Unit 2 Shopping",
+      "page": 14,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-money",
+      "en": "money",
+      "zh": "钱",
+      "unit": "Unit 2 Shopping",
+      "page": 14,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-doll",
+      "en": "doll",
+      "zh": "玩具娃娃",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-eleven",
+      "en": "eleven",
+      "zh": "十一",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-twelve",
+      "en": "twelve",
+      "zh": "十二",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-thirteen",
+      "en": "thirteen",
+      "zh": "十三",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-fourteen",
+      "en": "fourteen",
+      "zh": "十四",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-fifteen",
+      "en": "fifteen",
+      "zh": "十五",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-sixteen",
+      "en": "sixteen",
+      "zh": "十六",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-seventeen",
+      "en": "seventeen",
+      "zh": "十七",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-eighteen",
+      "en": "eighteen",
+      "zh": "十八",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-nineteen",
+      "en": "nineteen",
+      "zh": "十九",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-twenty",
+      "en": "twenty",
+      "zh": "二十",
+      "unit": "Unit 2 Shopping",
+      "page": 15,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-look-at",
+      "en": "look at",
+      "zh": "看",
+      "unit": "Unit 2 Shopping",
+      "page": 16,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-thirty",
+      "en": "thirty",
+      "zh": "三十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-forty",
+      "en": "forty",
+      "zh": "四十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-fifty",
+      "en": "fifty",
+      "zh": "五十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-sixty",
+      "en": "sixty",
+      "zh": "六十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-seventy",
+      "en": "seventy",
+      "zh": "七十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-eighty",
+      "en": "eighty",
+      "zh": "八十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-ninety",
+      "en": "ninety",
+      "zh": "九十",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 75,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u2-hundred",
+      "en": "hundred",
+      "zh": "百",
+      "unit": "Unit 2 Shopping",
+      "page": 17,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-study",
+      "en": "study",
+      "zh": "书房",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 26,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-whose",
+      "en": "whose",
+      "zh": "谁的",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 26,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-cd",
+      "en": "CD",
+      "zh": "激光唱片；光盘",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 26,
+      "vocabularyPage": 76,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-new",
+      "en": "new",
+      "zh": "新的",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 26,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-umbrella",
+      "en": "umbrella",
+      "zh": "伞",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 26,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-chair",
+      "en": "chair",
+      "zh": "椅子",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 27,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-watch",
+      "en": "watch",
+      "zh": "手表",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 27,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-tv",
+      "en": "TV",
+      "zh": "电视，电视机",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 27,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-table",
+      "en": "table",
+      "zh": "桌子",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 27,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-radio",
+      "en": "radio",
+      "zh": "收音机",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 27,
+      "vocabularyPage": 76,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-glasses",
+      "en": "glasses",
+      "zh": "眼镜",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 28,
+      "vocabularyPage": 76,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-tidy",
+      "en": "tidy",
+      "zh": "整洁的，整齐的",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 28,
+      "vocabularyPage": 76,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u3-clean",
+      "en": "clean",
+      "zh": "干净的",
+      "unit": "Unit 3 Uncle Booky's Study",
+      "page": 28,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-living-room",
+      "en": "living room",
+      "zh": "客厅",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-room",
+      "en": "room",
+      "zh": "房间",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-door",
+      "en": "door",
+      "zh": "门",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-welcome",
+      "en": "welcome",
+      "zh": "欢迎",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-nice",
+      "en": "nice",
+      "zh": "好的",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-bedroom",
+      "en": "bedroom",
+      "zh": "卧室",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-sleep",
+      "en": "sleep",
+      "zh": "睡觉",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "sleeping"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-bathroom",
+      "en": "bathroom",
+      "zh": "浴室；卫生间",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-wash",
+      "en": "wash",
+      "zh": "洗",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "washing"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-river",
+      "en": "river",
+      "zh": "河",
+      "unit": "Unit 4 Bobby's House",
+      "page": 38,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-kitchen",
+      "en": "kitchen",
+      "zh": "厨房",
+      "unit": "Unit 4 Bobby's House",
+      "page": 39,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-cook",
+      "en": "cook",
+      "zh": "烹调，做饭",
+      "unit": "Unit 4 Bobby's House",
+      "page": 40,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "cooking"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-fish",
+      "en": "fish",
+      "zh": "钓鱼",
+      "unit": "Unit 4 Bobby's House",
+      "page": 40,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "fishing"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-mrs",
+      "en": "Mrs",
+      "zh": "夫人，太太",
+      "unit": "Unit 4 Bobby's House",
+      "page": 40,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-make",
+      "en": "make",
+      "zh": "做",
+      "unit": "Unit 4 Bobby's House",
+      "page": 40,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "making"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-dinner",
+      "en": "dinner",
+      "zh": "正餐，晚餐",
+      "unit": "Unit 4 Bobby's House",
+      "page": 40,
+      "vocabularyPage": 76,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-drink",
+      "en": "drink",
+      "zh": "喝",
+      "unit": "Unit 4 Bobby's House",
+      "page": 41,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "drinking"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-study",
+      "en": "study",
+      "zh": "学习",
+      "unit": "Unit 4 Bobby's House",
+      "page": 41,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "studying"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-eat",
+      "en": "eat",
+      "zh": "吃",
+      "unit": "Unit 4 Bobby's House",
+      "page": 41,
+      "vocabularyPage": 76,
+      "starred": false,
+      "inflection": "eating"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u4-paint",
+      "en": "paint",
+      "zh": "绘画",
+      "unit": "Unit 4 Bobby's House",
+      "page": 41,
+      "vocabularyPage": 76,
+      "starred": true,
+      "inflection": "painting"
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-school",
+      "en": "school",
+      "zh": "学校",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-subject",
+      "en": "subject",
+      "zh": "科目",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-have",
+      "en": "have",
+      "zh": "有",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-math",
+      "en": "math",
+      "zh": "数学",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-english",
+      "en": "English",
+      "zh": "英语",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-chinese",
+      "en": "Chinese",
+      "zh": "语文；中文",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-p-e-",
+      "en": "P.E.",
+      "zh": "体育",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-class",
+      "en": "class",
+      "zh": "课",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-their",
+      "en": "their",
+      "zh": "他们的",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-teacher",
+      "en": "teacher",
+      "zh": "教师，老师",
+      "unit": "Unit 5 At School",
+      "page": 50,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-music",
+      "en": "music",
+      "zh": "音乐",
+      "unit": "Unit 5 At School",
+      "page": 51,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-art",
+      "en": "art",
+      "zh": "美术；艺术",
+      "unit": "Unit 5 At School",
+      "page": 51,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-science",
+      "en": "science",
+      "zh": "科学",
+      "unit": "Unit 5 At School",
+      "page": 51,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-classroom",
+      "en": "classroom",
+      "zh": "教室",
+      "unit": "Unit 5 At School",
+      "page": 52,
+      "vocabularyPage": 77,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-blackboard",
+      "en": "blackboard",
+      "zh": "黑板",
+      "unit": "Unit 5 At School",
+      "page": 52,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-office",
+      "en": "office",
+      "zh": "办公室",
+      "unit": "Unit 5 At School",
+      "page": 52,
+      "vocabularyPage": 77,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-playground",
+      "en": "playground",
+      "zh": "操场",
+      "unit": "Unit 5 At School",
+      "page": 52,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u5-library",
+      "en": "library",
+      "zh": "图书馆",
+      "unit": "Unit 5 At School",
+      "page": 53,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u6-christmas",
+      "en": "Christmas",
+      "zh": "圣诞节",
+      "unit": "Unit 6 Review",
+      "page": 62,
+      "vocabularyPage": 77,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u6-party",
+      "en": "party",
+      "zh": "聚会",
+      "unit": "Unit 6 Review",
+      "page": 62,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u6-beautiful",
+      "en": "beautiful",
+      "zh": "美丽的",
+      "unit": "Unit 6 Review",
+      "page": 62,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u6-gift",
+      "en": "gift",
+      "zh": "礼物",
+      "unit": "Unit 6 Review",
+      "page": 62,
+      "vocabularyPage": 77,
+      "starred": true
+    },
+    {
+      "id": "bnu-2013-g4-upper-u6-parents",
+      "en": "parents",
+      "zh": "父母",
+      "unit": "Unit 6 Review",
+      "page": 62,
+      "vocabularyPage": 77,
+      "starred": false
+    },
+    {
+      "id": "bnu-2013-g4-upper-u6-some",
+      "en": "some",
+      "zh": "一些，若干",
+      "unit": "Unit 6 Review",
+      "page": 63,
+      "vocabularyPage": 77,
+      "starred": false
+    }
+  ]
+}

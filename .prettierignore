@@ -1,0 +1,8 @@
+node_modules/
+dist/
+releases/
+artifacts/
+public/data/
+docs/evidence/
+package-lock.json
+THIRD_PARTY_NOTICES.md

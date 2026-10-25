@@ -1,0 +1,3682 @@
+[
+  {
+    "en": "abroad",
+    "zh": "adv. 在国外，到国外",
+    "phonetic": "/əˈbrɔːd/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "accept",
+    "zh": "vt. & vi. 收受，接受",
+    "phonetic": "/əkˈsept/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "accidentally",
+    "zh": "adv. 意外地，偶然地",
+    "phonetic": "/ˌæksɪˈdentəli/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "action",
+    "zh": "n. 行动；行为",
+    "phonetic": "/ˈækʃn/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "admire",
+    "zh": "vt. 钦佩，仰慕；欣赏",
+    "phonetic": "/ədˈmaɪə/",
+    "page": 68,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "adult",
+    "zh": "n. 成年人 adj. 成年的",
+    "phonetic": "/ˈædʌlt/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "advertisement",
+    "zh": "n. 广告",
+    "phonetic": "/ədˈvɜːtɪsmənt/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "advice",
+    "zh": "n. 劝告，忠告，建议，意见",
+    "phonetic": "/ədˈvaɪs/",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "advise",
+    "zh": "vt. & vi. 劝告，忠告，建议",
+    "phonetic": "/ədˈvaɪz/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "agree",
+    "zh": "vt. & vi. 同意，赞成",
+    "phonetic": "/əˈɡriː/",
+    "page": 126,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "ahead",
+    "zh": "adv. 向前，在前面",
+    "phonetic": "/əˈhed/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "aid",
+    "zh": "n. 援助 vt. & vi. 帮助，援助",
+    "phonetic": "/eɪd/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "aim",
+    "zh": "vt. & vi. 力求达到，力争做到 n. 目的，目标",
+    "phonetic": "/eɪm/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "all over",
+    "zh": "到处，处处",
+    "phonetic": "",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "almost",
+    "zh": "adv. 几乎，差不多",
+    "phonetic": "/ˈɔːlməʊst/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "already",
+    "zh": "adv. 已经，早已",
+    "phonetic": "/ɔːlˈredi/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "although",
+    "zh": "conj. 虽然，尽管，即使",
+    "phonetic": "/ɔːlˈðəʊ/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "altogether",
+    "zh": "adv. 总共，一共",
+    "phonetic": "/ˌɔːltəˈɡeðə/",
+    "page": 38,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "among",
+    "zh": "prep. 在……中，周围是；……之一",
+    "phonetic": "/əˈmʌŋ/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "ancient",
+    "zh": "adj. 古代的",
+    "phonetic": "/ˈeɪnʃənt/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "anger",
+    "zh": "n. 怒火，怒气",
+    "phonetic": "/ˈæŋɡə/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "anyone",
+    "zh": "pron. 任何人",
+    "phonetic": "/ˈeniwʌn/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "anywhere",
+    "zh": "adv. 在任何地方",
+    "phonetic": "/ˈeniweə/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "apology",
+    "zh": "n. 道歉",
+    "phonetic": "/əˈpɒlədʒi/",
+    "page": 60,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "app",
+    "zh": "n. 应用软件；应用程序（=application）",
+    "phonetic": "/æp/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "appearance",
+    "zh": "n. 外貌，外观，外表",
+    "phonetic": "/əˈpɪərəns/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "area",
+    "zh": "n. 地区，地域",
+    "phonetic": "/ˈeəriə/",
+    "page": 77,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "argue",
+    "zh": "vi. 争论，争吵，争辩",
+    "phonetic": "/ˈɑːɡjuː/",
+    "page": 46,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "army",
+    "zh": "n. 陆上作战军队，陆军部队",
+    "phonetic": "/ˈɑːmi/",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "arrive",
+    "zh": "vi. 到达，抵达",
+    "phonetic": "/əˈraɪv/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "artwork",
+    "zh": "n. 艺术作品；插图，图片",
+    "phonetic": "/ˈɑːtwɜːk/",
+    "page": 121,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "as soon as",
+    "zh": "一……就……",
+    "phonetic": "",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "as well as",
+    "zh": "除……之外，也，还",
+    "phonetic": "",
+    "page": 55,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "at last",
+    "zh": "终于，最终",
+    "phonetic": "",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "at least",
+    "zh": "至少，不少于",
+    "phonetic": "",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "athlete",
+    "zh": "n. 运动员",
+    "phonetic": "/ˈæθliːt/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "athletic",
+    "zh": "adj. 体育运动的",
+    "phonetic": "/æθˈletɪk/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "attend",
+    "zh": "vt. & vi. 出席，参加",
+    "phonetic": "/əˈtend/",
+    "page": 98,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "award",
+    "zh": "n. 奖，奖品，奖金，奖状",
+    "phonetic": "/əˈwɔːd/",
+    "page": 126,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "background",
+    "zh": "n. 出身背景；背景",
+    "phonetic": "/ˈbækɡraʊnd/",
+    "page": 120,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "balance",
+    "zh": "vt. & vi. 使保持平衡 n. 均衡，平衡",
+    "phonetic": "/ˈbæləns/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "balloon",
+    "zh": "n. 气球",
+    "phonetic": "/bəˈluːn/",
+    "page": 118,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "band",
+    "zh": "n. 流行音乐乐队；一伙人，一帮人",
+    "phonetic": "/bænd/",
+    "page": 120,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "base on",
+    "zh": "以……为基础（或根据）",
+    "phonetic": "",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "baseball",
+    "zh": "n. 棒球运动；棒球",
+    "phonetic": "/ˈbeɪsbɔːl/",
+    "page": 2,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "basic",
+    "zh": "adj. 基本的，基础的",
+    "phonetic": "/ˈbeɪsɪk/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "bat",
+    "zh": "n. 球棒，球拍，球板；蝙蝠",
+    "phonetic": "/bæt/",
+    "page": 16,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "battle",
+    "zh": "n. 战斗，战役，搏斗；斗争",
+    "phonetic": "/ˈbætl/",
+    "page": 10,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "BCE",
+    "zh": "abbr. 公元前",
+    "phonetic": "/ˌbiː siː ˈiː/",
+    "page": 5,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "be born",
+    "zh": "出生，出世",
+    "phonetic": "",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "belongings",
+    "zh": "n. 财物",
+    "phonetic": "/bɪˈlɒŋɪŋz/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "benefit",
+    "zh": "n. 优势，益处，成效",
+    "phonetic": "/ˈbenɪfɪt/",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "blow",
+    "zh": "vt. & vi. 吹；刮",
+    "phonetic": "/bləʊ/",
+    "page": 118,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "board",
+    "zh": "n. 板，木板",
+    "phonetic": "/bɔːd/",
+    "page": 70,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "boiling",
+    "zh": "adj. 沸腾的；炽热的",
+    "phonetic": "/ˈbɔɪlɪŋ/",
+    "page": 70,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "book",
+    "zh": "vt. & vi. 预约，预订 n. 书，书籍",
+    "phonetic": "/bʊk/",
+    "page": 38,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "bored",
+    "zh": "adj. 厌倦的，烦闷的",
+    "phonetic": "/bɔːd/",
+    "page": 46,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "bottom",
+    "zh": "n.（朝下的）底，底面；底部 adj. 底部的，尽头的",
+    "phonetic": "/ˈbɒtəm/",
+    "page": 62,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "bowl",
+    "zh": "n. 一碗；碗",
+    "phonetic": "/bəʊl/",
+    "page": 118,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "brain",
+    "zh": "n. 脑；智力，脑力",
+    "phonetic": "/breɪn/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "brake",
+    "zh": "n. 刹车，车闸",
+    "phonetic": "/breɪk/",
+    "page": 36,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "bridge",
+    "zh": "n. 桥",
+    "phonetic": "/brɪdʒ/",
+    "page": 70,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "bridgehead",
+    "zh": "n. 桥头堡",
+    "phonetic": "/ˈbrɪdʒhed/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "bully",
+    "zh": "n. 仗势欺人者，横行霸道者 vt. 恐吓，伤害，胁迫",
+    "phonetic": "/ˈbʊli/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "by the way",
+    "zh": "顺便提一下，捎带说一声",
+    "phonetic": "",
+    "page": 139,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "capital",
+    "zh": "adj. 大写的 n. 首都，首府；大写字母",
+    "phonetic": "/ˈkæpɪtl/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "career",
+    "zh": "n. 生涯，职业",
+    "phonetic": "/kəˈrɪə/",
+    "page": 10,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "cash",
+    "zh": "n. 现金",
+    "phonetic": "/kæʃ/",
+    "page": 104,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "cause",
+    "zh": "vt. 造成，引起，导致 n. 原因；理由",
+    "phonetic": "/kɔːz/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "celebration",
+    "zh": "n. 庆典，庆祝活动",
+    "phonetic": "/ˌselɪˈbreɪʃn/",
+    "page": 111,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "century",
+    "zh": "n. 世纪；百年",
+    "phonetic": "/ˈsentʃəri/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "certainly",
+    "zh": "adv. 无疑，肯定；当然",
+    "phonetic": "/ˈsɜːtnli/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "chain",
+    "zh": "n. 链子，链条",
+    "phonetic": "/tʃeɪn/",
+    "page": 70,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "championship",
+    "zh": "n. 锦标赛；冠军地位",
+    "phonetic": "/ˈtʃæmpiənʃɪp/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "chance",
+    "zh": "n. 机会，时机；可能性；碰巧",
+    "phonetic": "/tʃɑːns/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "charge",
+    "zh": "vt. 充电",
+    "phonetic": "/tʃɑːdʒ/",
+    "page": 26,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "cheat",
+    "zh": "vt. 欺骗，蒙骗 vi. 作弊，舞弊",
+    "phonetic": "/tʃiːt/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "cheer",
+    "zh": "vt. & vi. 欢呼，喝彩，加油；鼓励，鼓舞",
+    "phonetic": "/tʃɪə/",
+    "page": 82,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "cheer up",
+    "zh": "（使）变得更高兴，振奋起来",
+    "phonetic": "",
+    "page": 82,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "cheerful",
+    "zh": "adj. 快乐的，高兴的，兴高采烈的",
+    "phonetic": "/ˈtʃɪəfl/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "childhood",
+    "zh": "n. 童年，孩童时期",
+    "phonetic": "/ˈtʃaɪldhʊd/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "click",
+    "zh": "vt. & vi. 点击，单击",
+    "phonetic": "/klɪk/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "comfort",
+    "zh": "n. 安慰，慰藉；舒服，安逸 vt. 安慰；抚慰",
+    "phonetic": "/ˈkʌmfət/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "committee",
+    "zh": "n. 委员会",
+    "phonetic": "/kəˈmɪti/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "common",
+    "zh": "adj. 常见的，通常的，普遍的；共有的，共享的",
+    "phonetic": "/ˈkɒmən/",
+    "page": 25,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "communicate",
+    "zh": "vt. & vi. 交流 vi. 沟通",
+    "phonetic": "/kəˈmjuːnɪkeɪt/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "compare",
+    "zh": "vt. 比较，对比",
+    "phonetic": "/kəmˈpeə/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "complete",
+    "zh": "vt. 完成，结束 adj. 全部的，完整的，整个的",
+    "phonetic": "/kəmˈpliːt/",
+    "page": 80,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "congratulation",
+    "zh": "n. 祝贺，恭喜",
+    "phonetic": "/kənˌɡrætʃəˈleɪʃn/",
+    "page": 126,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "continent",
+    "zh": "n. 洲",
+    "phonetic": "/ˈkɒntɪnənt/",
+    "page": 5,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "continue",
+    "zh": "vt. & vi. 持续；不断发生",
+    "phonetic": "/kənˈtɪnjuː/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "control",
+    "zh": "vt. 指挥，控制，掌管 n. 管理权，控制权",
+    "phonetic": "/kənˈtrəʊl/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "corridor",
+    "zh": "n. 走廊，过道，通道",
+    "phonetic": "/ˈkɒrɪdɔː/",
+    "page": 26,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "create",
+    "zh": "vt. 创造，创作，创建",
+    "phonetic": "/kriˈeɪt/",
+    "page": 112,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "culture",
+    "zh": "n. 文化；文明",
+    "phonetic": "/ˈkʌltʃə/",
+    "page": 90,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "cycle",
+    "zh": "vi. 骑自行车",
+    "phonetic": "/ˈsaɪkl/",
+    "page": 26,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "deaf",
+    "zh": "adj. 聋的",
+    "phonetic": "/def/",
+    "page": 49,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "design",
+    "zh": "vt. 计划，制订；设计 n. 设计，布局，安排",
+    "phonetic": "/dɪˈzaɪn/",
+    "page": 118,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "diary",
+    "zh": "n. 日记，日记簿",
+    "phonetic": "/ˈdaɪəri/",
+    "page": 102,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "diet",
+    "zh": "n. 日常饮食，日常食物；规定饮食",
+    "phonetic": "/ˈdaɪət/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "digital",
+    "zh": "adj. 数字的；数码的，数字式的",
+    "phonetic": "/ˈdɪdʒɪtl/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "dollar",
+    "zh": "n. 元（美国、加拿大、澳大利亚等国的货币单位）",
+    "phonetic": "/ˈdɒlə/",
+    "page": 104,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "double",
+    "zh": "adj. 连续两个的；成双的；两倍的 det., pron. & adv. 两倍的，双倍的",
+    "phonetic": "/ˈdʌbl/",
+    "page": 121,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "download",
+    "zh": "vt. 下载",
+    "phonetic": "/ˌdaʊnˈləʊd/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "drive sb mad",
+    "zh": "让某人受不了",
+    "phonetic": "",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "drop",
+    "zh": "vt. & vi. 落下，掉下；放弃",
+    "phonetic": "/drɒp/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "dry",
+    "zh": "adj. 干的，干燥的",
+    "phonetic": "/draɪ/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "earthquake",
+    "zh": "n. 地震",
+    "phonetic": "/ˈɜːθkweɪk/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "electricity",
+    "zh": "n. 电，电能",
+    "phonetic": "/ɪˌlekˈtrɪsəti/",
+    "page": 26,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "emotion",
+    "zh": "n. 强烈的感情，激情，情感，情绪",
+    "phonetic": "/ɪˈməʊʃn/",
+    "page": 45,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "emotional",
+    "zh": "adj. 情绪激动的，感情冲动的； 感情的，情绪的",
+    "phonetic": "/ɪˈməʊʃənl/",
+    "page": 48,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "enemy",
+    "zh": "n. 敌人",
+    "phonetic": "/ˈenəmi/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "enter",
+    "zh": "vt. & vi. 报名参加；进入",
+    "phonetic": "/ˈentə/",
+    "page": 126,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "essay",
+    "zh": "n. 文章，短文",
+    "phonetic": "/ˈeseɪ/",
+    "page": 58,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "eve",
+    "zh": "n. 前夜，前夕",
+    "phonetic": "/iːv/",
+    "page": 114,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "ever",
+    "zh": "adv. 在任何时候，从来；以往任何时候，曾经",
+    "phonetic": "/ˈevə/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "ever since",
+    "zh": "自从，自……以后",
+    "phonetic": "",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "everybody",
+    "zh": "pron. 每人，人人，所有人",
+    "phonetic": "/ˈevribɒdi/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "exam",
+    "zh": "n. 考试",
+    "phonetic": "/ɪɡˈzæm/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "excellent",
+    "zh": "adj. 极好的，优秀的，杰出的",
+    "phonetic": "/ˈeksələnt/",
+    "page": 102,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "excitement",
+    "zh": "n. 激动，兴奋，刺激； 令人激动的事",
+    "phonetic": "/ɪkˈsaɪtmənt/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "expensive",
+    "zh": "adj. 昂贵的，价格高的",
+    "phonetic": "/ɪkˈspensɪv/",
+    "page": 104,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "explain",
+    "zh": "vt. & vi. 解释，说明，阐明",
+    "phonetic": "/ɪkˈspleɪn/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "express",
+    "zh": "vt. 表示，表达，表露",
+    "phonetic": "/ɪkˈspres/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "fail",
+    "zh": "vt. & vi. 不及格；失败，未能（做到）",
+    "phonetic": "/feɪl/",
+    "page": 82,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "familiar",
+    "zh": "adj. 熟悉的，常见到的，常听说的",
+    "phonetic": "/fəˈmɪliə/",
+    "page": 92,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "faraway",
+    "zh": "adj. 遥远的",
+    "phonetic": "/ˈfɑːrəweɪ/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "fault",
+    "zh": "n. 责任，过错，过失",
+    "phonetic": "/fɔːlt/",
+    "page": 60,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "favour",
+    "zh": "vt. 较喜欢 n. 帮助；赞同",
+    "phonetic": "/ˈfeɪvə/",
+    "page": 14,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "feeling",
+    "zh": "n. 情感，感情；感觉，感触",
+    "phonetic": "/ˈfiːlɪŋ/",
+    "page": 45,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "fight",
+    "zh": "vt. & vi. 打仗，战斗；搏斗，打架",
+    "phonetic": "/faɪt/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "fire",
+    "zh": "vt. & vi. 射击，开火，开枪 n. 火",
+    "phonetic": "/ˈfaɪə/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "firework",
+    "zh": "n. 烟火，烟花",
+    "phonetic": "/ˈfaɪəwɜːk/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "first aid",
+    "zh": "急救",
+    "phonetic": "",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "fix",
+    "zh": "vt. 修理，校准，校正",
+    "phonetic": "/fɪks/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "flight",
+    "zh": "n. 航班飞机，班机",
+    "phonetic": "/flaɪt/",
+    "page": 90,
+    "starred": true,
+    "unitNumber": 5
+  },
+  {
+    "en": "flood",
+    "zh": "n. 洪水，水灾",
+    "phonetic": "/flʌd/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "focus",
+    "zh": "vt. & vi. 集中（注意力、精力等于） n. 中心点，关注",
+    "phonetic": "/ˈfəʊkəs/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "focused",
+    "zh": "adj. 注意力集中的；目标明确的",
+    "phonetic": "/ˈfəʊkəst/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "folk",
+    "zh": "adj. 传统民间的，民俗的",
+    "phonetic": "/fəʊk/",
+    "page": 120,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "folk art",
+    "zh": "民间艺术",
+    "phonetic": "",
+    "page": 120,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "follow",
+    "zh": "vt. 接受，遵循 vt. & vi. 跟随，跟着",
+    "phonetic": "/ˈfɒləʊ/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "forget",
+    "zh": "vt. & vi. 忘记，遗忘",
+    "phonetic": "/fəˈɡet/",
+    "page": 16,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "forgive",
+    "zh": "vt. & vi. 原谅，宽恕",
+    "phonetic": "/fəˈɡɪv/",
+    "page": 60,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "founding",
+    "zh": "n. 创立，创建",
+    "phonetic": "/ˈfaʊndɪŋ/",
+    "page": 84,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "friendship",
+    "zh": "n. 友谊，友情",
+    "phonetic": "/ˈfrendʃɪp/",
+    "page": 128,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "frightening",
+    "zh": "adj. 引起恐惧的，骇人的",
+    "phonetic": "/ˈfraɪtnɪŋ/",
+    "page": 136,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "fruitful",
+    "zh": "adj. 成果丰硕的，富有成效的",
+    "phonetic": "/ˈfruːtfl/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "full",
+    "zh": "adj. 大量的，丰富的；满的，充满的",
+    "phonetic": "/fʊl/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "fully",
+    "zh": "adv. 完全地，全部地，充分地",
+    "phonetic": "/ˈfʊli/",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "gathering",
+    "zh": "n. 聚集，聚会，集会",
+    "phonetic": "/ˈɡæðərɪŋ/",
+    "page": 115,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "generation",
+    "zh": "n. 一代人，同代人，同辈人",
+    "phonetic": "/ˌdʒenəˈreɪʃn/",
+    "page": 115,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "get-together",
+    "zh": "n. 聚会，联欢会",
+    "phonetic": "/ˈɡet təɡeðə/",
+    "page": 112,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "give up",
+    "zh": "投降，认输，放弃",
+    "phonetic": "",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "glad",
+    "zh": "adj. 高兴，愉快",
+    "phonetic": "/ɡlæd/",
+    "page": 82,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "goal",
+    "zh": "n. 射门，进球得分；目标，目的",
+    "phonetic": "/ɡəʊl/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "god",
+    "zh": "n. 神",
+    "phonetic": "/ɡɒd/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "gold",
+    "zh": "n. 金 adj. 金色的",
+    "phonetic": "/ɡəʊld/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "golden",
+    "zh": "adj. 金色的",
+    "phonetic": "/ˈɡəʊldən/",
+    "page": 102,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "good-looking",
+    "zh": "adj. 漂亮的，好看的",
+    "phonetic": "/ˌɡʊd ˈlʊkɪŋ/",
+    "page": 55,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "graduation",
+    "zh": "n. 毕业；毕业典礼",
+    "phonetic": "/ˌɡrædʒuˈeɪʃn/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "greeting",
+    "zh": "n. 问候，招呼",
+    "phonetic": "/ˈɡriːtɪŋ/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "gun",
+    "zh": "n. 枪",
+    "phonetic": "/ɡʌn/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "hacker",
+    "zh": "n. 黑客",
+    "phonetic": "/ˈhækə/",
+    "page": 32,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "had better",
+    "zh": "应该，最好",
+    "phonetic": "",
+    "page": 139,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "hammer",
+    "zh": "n. 锤子，榔头",
+    "phonetic": "/ˈhæmə/",
+    "page": 24,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "happen",
+    "zh": "vi. （尤指偶然）发生，出现",
+    "phonetic": "/ˈhæpən/",
+    "page": 27,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "hard-working",
+    "zh": "adj. 工作努力的，辛勤的",
+    "phonetic": "/ˌhɑːd ˈwɜːkɪŋ/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "harm",
+    "zh": "n. & vt. 伤害，损害",
+    "phonetic": "/hɑːm/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "hate",
+    "zh": "vt. & vi. 极不喜欢，厌恶",
+    "phonetic": "/heɪt/",
+    "page": 63,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "head coach",
+    "zh": "主教练",
+    "phonetic": "",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "headphones",
+    "zh": "n. 头戴式耳机",
+    "phonetic": "/ˈhedfəʊnz/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "healthcare",
+    "zh": "n. 医疗（服务）",
+    "phonetic": "/ˈhelθ keə/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "heart",
+    "zh": "n. 核心，实质，要点；心，心脏",
+    "phonetic": "/hɑːt/",
+    "page": 114,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "height",
+    "zh": "n. 身高，高度",
+    "phonetic": "/haɪt/",
+    "page": 54,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "helmet",
+    "zh": "n. 头盔，防护帽",
+    "phonetic": "/ˈhelmɪt/",
+    "page": 36,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "hero",
+    "zh": "n. 英雄，豪杰",
+    "phonetic": "/ˈhɪərəʊ/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "herself",
+    "zh": "pron. 她自己",
+    "phonetic": "/hɜːˈself/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "hide",
+    "zh": "vt. & vi. 藏，隐蔽；躲避，隐匿",
+    "phonetic": "/haɪd/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "hike",
+    "zh": "vt. & vi. 去……远足，做徒步旅行 n. 远足，徒步旅行",
+    "phonetic": "/haɪk/",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "hold on to",
+    "zh": "抓紧，不放开",
+    "phonetic": "",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "honour",
+    "zh": "vt. 尊敬，尊重（某人） n. 尊敬，尊重；荣幸，光荣",
+    "phonetic": "/ˈɒnə/",
+    "page": 129,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "host",
+    "zh": "n. 节目主持人；主人 vt. 主持；主办",
+    "phonetic": "/həʊst/",
+    "page": 2,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "house-warming",
+    "zh": "n. 乔迁聚会",
+    "phonetic": "/ˈhaʊs wɔːmɪŋ/",
+    "page": 112,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "human being",
+    "zh": "人",
+    "phonetic": "",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "humorous",
+    "zh": "adj. 有幽默感的；滑稽有趣的",
+    "phonetic": "/ˈhjuːmərəs/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "image",
+    "zh": "n. 形象，印象；画像，雕像，塑像",
+    "phonetic": "/ˈɪmɪdʒ/",
+    "page": 55,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "improve",
+    "zh": "vt. & vi. 改进，改善；提高水平",
+    "phonetic": "/ɪmˈpruːv/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "in one way or another",
+    "zh": "不管怎样，不管以何方式",
+    "phonetic": "",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "in the end",
+    "zh": "最后，终于；到头来，最终",
+    "phonetic": "",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "include",
+    "zh": "vt. 包括，包含",
+    "phonetic": "/ɪnˈkluːd/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "indeed",
+    "zh": "adv. 强调肯定的陈述或答复",
+    "phonetic": "/ɪnˈdiːd/",
+    "page": 140,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "influence",
+    "zh": "vt. 影响；支配 n. 影响，作用",
+    "phonetic": "/ˈɪnfluəns/",
+    "page": 107,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "inspire",
+    "zh": "vt. 激励，鼓舞",
+    "phonetic": "/ɪnˈspaɪə/",
+    "page": 11,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "instead",
+    "zh": "adv. 代替，顶替；反而，却",
+    "phonetic": "/ɪnˈsted/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "instruction",
+    "zh": "n. 指示，命令；用法说明，操作指南",
+    "phonetic": "/ɪnˈstrʌkʃn/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "into",
+    "zh": "prep. 到……里面，进入",
+    "phonetic": "/ˈɪntuː/",
+    "page": 30,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "invitation",
+    "zh": "n. 邀请；获得邀请",
+    "phonetic": "/ˌɪnvɪˈteɪʃn/",
+    "page": 124,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "iron",
+    "zh": "n. 铁",
+    "phonetic": "/ˈaɪən/",
+    "page": 70,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "Iron Hammer",
+    "zh": "铁榔头",
+    "phonetic": "",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "itself",
+    "zh": "pron. 它自己",
+    "phonetic": "/ɪtˈself/",
+    "page": 73,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "jacket",
+    "zh": "n. 夹克衫，短上衣",
+    "phonetic": "/ˈdʒækɪt/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "judgement",
+    "zh": "n. 看法，评价；判断力，识别力",
+    "phonetic": "/ˈdʒʌdʒmənt/",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "kick",
+    "zh": "vt. & vi. 踢，踹",
+    "phonetic": "/kɪk/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "knee",
+    "zh": "n. 膝，膝盖",
+    "phonetic": "/niː/",
+    "page": 70,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "knife",
+    "zh": "n. 刀 （pl. knives）",
+    "phonetic": "/naɪf/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "knowledge",
+    "zh": "n. 知识，学问，学识",
+    "phonetic": "/ˈnɒlɪdʒ/",
+    "page": 80,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "kung fu",
+    "zh": "n. 功夫",
+    "phonetic": "/ˌkʌŋ ˈfuː/",
+    "page": 2,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "lantern",
+    "zh": "n. 灯笼，提灯",
+    "phonetic": "/ˈlæntən/",
+    "page": 124,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "laziness",
+    "zh": "n. 懒散，懒惰",
+    "phonetic": "/ˈleɪzinəs/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "lead",
+    "zh": "vt. & vi. 带路，领路；领导 n. 领先地位",
+    "phonetic": "/liːd/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "least",
+    "zh": "adj. & adv. 最小，最少",
+    "phonetic": "/liːst/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "let sb down",
+    "zh": "使失望",
+    "phonetic": "",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "lie",
+    "zh": "vi. 存在，在于；躺；说谎，撒谎 n. 谎言，谎话",
+    "phonetic": "/laɪ/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "lie in",
+    "zh": "存在，在于",
+    "phonetic": "",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "life jacket",
+    "zh": "救生衣",
+    "phonetic": "",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "lightning",
+    "zh": "n. 闪电",
+    "phonetic": "/ˈlaɪtnɪŋ/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "lock",
+    "zh": "vt. & vi. 锁上，被锁住 n. 锁；车锁",
+    "phonetic": "/lɒk/",
+    "page": 36,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "lunar",
+    "zh": "adj. 月球的，月亮的",
+    "phonetic": "/ˈluːnə/",
+    "page": 121,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "machine gun",
+    "zh": "机关枪，机枪",
+    "phonetic": "",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "make sth up",
+    "zh": "补上，作出补偿",
+    "phonetic": "",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "make-up",
+    "zh": "n. 化妆品",
+    "phonetic": "/ˈmeɪk ʌp/",
+    "page": 55,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "mark",
+    "zh": "n. 符号，记号 vt. 做记号",
+    "phonetic": "/mɑːk/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "market",
+    "zh": "n. 集市，市场，商场",
+    "phonetic": "/ˈmɑːkɪt/",
+    "page": 87,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "mean",
+    "zh": "vt. 打算，意欲；有……含义；意思是",
+    "phonetic": "/miːn/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "meaning",
+    "zh": "n. 价值；意义，意思",
+    "phonetic": "/ˈmiːnɪŋ/",
+    "page": 112,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "meaningful",
+    "zh": "adj. 重要的，重大的",
+    "phonetic": "/ˈmiːnɪŋfl/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "medal",
+    "zh": "n. 奖章，勋章",
+    "phonetic": "/ˈmedl/",
+    "page": 4,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "media",
+    "zh": "n. 大众传播媒介，大众传播工具",
+    "phonetic": "/ˈmiːdiə/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "medical",
+    "zh": "adj. 医学的，医疗的",
+    "phonetic": "/ˈmedɪkl/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "medicine",
+    "zh": "n. 药",
+    "phonetic": "/ˈmedsn/",
+    "page": 96,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "medium",
+    "zh": "adj. 中等的，中号的 n. 媒介，手段， 方法 （pl. media）",
+    "phonetic": "/ˈmiːdiəm/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "meeting",
+    "zh": "n. 会面，集会；会议",
+    "phonetic": "/ˈmiːtɪŋ/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "mess",
+    "zh": "n. 麻烦，困境，混乱；肮脏，杂乱，不整洁",
+    "phonetic": "/mes/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "message",
+    "zh": "n. 信息，消息",
+    "phonetic": "/ˈmesɪdʒ/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "midnight",
+    "zh": "n. 午夜，子夜",
+    "phonetic": "/ˈmɪdnaɪt/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "might",
+    "zh": "modal v. 可能，可以",
+    "phonetic": "/maɪt/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "mind",
+    "zh": "n. 思考能力，思维方式；头脑，大脑 vt. & vi. 介意；烦恼",
+    "phonetic": "/maɪnd/",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "mirror",
+    "zh": "n. 镜子",
+    "phonetic": "/ˈmɪrə/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "mistake",
+    "zh": "n. 错误，失误",
+    "phonetic": "/mɪˈsteɪk/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "mix",
+    "zh": "n. 混合，混杂 vt. & vi. （使）混合，掺和",
+    "phonetic": "/mɪks/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "mobile",
+    "zh": "adj. 手机的，移动设备的；可移动的",
+    "phonetic": "/ˈməʊbaɪl/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "moment",
+    "zh": "n. 一段时光，一段时间；片刻，瞬间",
+    "phonetic": "/ˈməʊmənt/",
+    "page": 112,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "mooncake",
+    "zh": "n. 月饼",
+    "phonetic": "/ˈmuːnkeɪk/",
+    "page": 124,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "motto",
+    "zh": "n. 座右铭，格言，箴言",
+    "phonetic": "/ˈmɒtəʊ/",
+    "page": 4,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "negative",
+    "zh": "adj. 消极的，负面的",
+    "phonetic": "/ˈneɡətɪv/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "nickname",
+    "zh": "n. 绰号，外号",
+    "phonetic": "/ˈnɪkneɪm/",
+    "page": 33,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "normally",
+    "zh": "adv. 通常，正常情况下",
+    "phonetic": "/ˈnɔːməli/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "not... any more",
+    "zh": "再也不，不再",
+    "phonetic": "",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "nothing",
+    "zh": "pron. 没有什么",
+    "phonetic": "/ˈnʌθɪŋ/",
+    "page": 46,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "notice",
+    "zh": "vt. & vi. 意识到；注意到",
+    "phonetic": "/ˈnəʊtɪs/",
+    "page": 55,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "offer",
+    "zh": "vt. 主动提出，主动分担；主动提供；供应",
+    "phonetic": "/ˈɒfə/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "on sale",
+    "zh": "折价销售，减价出售",
+    "phonetic": "",
+    "page": 104,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "once",
+    "zh": "adv. 一次；曾经 conj. 一……就，一旦，当……时候",
+    "phonetic": "/wʌns/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "one by one",
+    "zh": "逐个地；逐一地",
+    "phonetic": "",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "online",
+    "zh": "adj. 线上的，网上的 adv. 在网上，利用网络",
+    "phonetic": "/ˌɒnˈlaɪn/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "ordinary",
+    "zh": "adj. 普通的，平常的",
+    "phonetic": "/ˈɔːdnri/",
+    "page": 48,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "organised",
+    "zh": "adj. 有条理的，有效率的；有组织的，系统的",
+    "phonetic": "/ˈɔːɡənaɪzd/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "ourselves",
+    "zh": "pron. 我们自己",
+    "phonetic": "/ˌaʊəˈselvz/",
+    "page": 73,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "outgoing",
+    "zh": "adj. 爱交际的，友好的，外向的",
+    "phonetic": "/ˌaʊtˈɡəʊɪŋ/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "overreact",
+    "zh": "vi. 反应过激，反应过火",
+    "phonetic": "/ˌəʊvəriˈækt/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "overtake",
+    "zh": "vt. & vi. 超过，赶上",
+    "phonetic": "/ˌəʊvəˈteɪk/",
+    "page": 36,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "pack",
+    "zh": "vt. & vi. 收拾（行李），装（箱） n.（商品的）纸包",
+    "phonetic": "/pæk/",
+    "page": 90,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "packet",
+    "zh": "n. 小袋",
+    "phonetic": "/ˈpækɪt/",
+    "page": 114,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "painful",
+    "zh": "adj. 令人痛苦（或难过、难堪）的； 令人疼痛的",
+    "phonetic": "/ˈpeɪnfl/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "particularly",
+    "zh": "adv. 特别，尤其",
+    "phonetic": "/pəˈtɪkjələli/",
+    "page": 102,
+    "starred": true,
+    "unitNumber": 5
+  },
+  {
+    "en": "passport",
+    "zh": "n. 护照",
+    "phonetic": "/ˈpɑːspɔːt/",
+    "page": 96,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "password",
+    "zh": "n. 密码；口令",
+    "phonetic": "/ˈpɑːswɜːd/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "path",
+    "zh": "n. 小路，小径",
+    "phonetic": "/pɑːθ/",
+    "page": 27,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "per cent",
+    "zh": "n. 百分之…… adj. & adv. 每一百中",
+    "phonetic": "/pəˈ sent/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "perfect",
+    "zh": "adj. 完备的，完美的；极好的",
+    "phonetic": "/ˈpɜːfɪkt/",
+    "page": 55,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "perform",
+    "zh": "vt. & vi. 演出，表演 vt. 做，履行，执行",
+    "phonetic": "/pəˈfɔːm/",
+    "page": 120,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "performance",
+    "zh": "n. 表演，演出",
+    "phonetic": "/pəˈfɔːməns/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "person",
+    "zh": "n. 人，个人",
+    "phonetic": "/ˈpɜːsn/",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "personality",
+    "zh": "n. 性格，个性，人格",
+    "phonetic": "/ˌpɜːsəˈnæləti/",
+    "page": 54,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "physical",
+    "zh": "adj. 身体的，肉体的；客观存在的",
+    "phonetic": "/ˈfɪzɪkl/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "pick",
+    "zh": "vt. 选择，挑选；采，摘",
+    "phonetic": "/pɪk/",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "pick up",
+    "zh": "拿起，提起；接人",
+    "phonetic": "",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "poetry",
+    "zh": "n. 诗集，诗歌，诗作",
+    "phonetic": "/ˈpəʊətri/",
+    "page": 124,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "point",
+    "zh": "n. 论点，观点；重点，要点；地点",
+    "phonetic": "/pɔɪnt/",
+    "page": 92,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "point of view",
+    "zh": "观点，态度，看法",
+    "phonetic": "",
+    "page": 92,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "pollution",
+    "zh": "n. 污染；污染物",
+    "phonetic": "/pəˈluːʃn/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "poor",
+    "zh": "adj. 可怜的，不幸的；贫穷的",
+    "phonetic": "/pɔː/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "popular",
+    "zh": "adj. 大众喜爱的，广受欢迎的；通俗的",
+    "phonetic": "/ˈpɒpjələ/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "positive",
+    "zh": "adj. 积极乐观的，正面的",
+    "phonetic": "/ˈpɒzətɪv/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "possible",
+    "zh": "adj. 可能的，能做到的",
+    "phonetic": "/ˈpɒsəbl/",
+    "page": 80,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "prefer",
+    "zh": "vt. 较喜欢，喜欢…… 多于……",
+    "phonetic": "/prɪˈfɜː/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "present",
+    "zh": "adj. 现存的，当前的 n. 礼物；现在",
+    "phonetic": "/ˈpreznt/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "president",
+    "zh": "n. 主席，会长；总统，国家主席",
+    "phonetic": "/ˈprezɪdənt/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "press",
+    "zh": "vt. & vi. 按，压",
+    "phonetic": "/pres/",
+    "page": 41,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "pressure",
+    "zh": "n. 心理压力",
+    "phonetic": "/ˈpreʃə/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "pretend",
+    "zh": "vt. & vi. 假装",
+    "phonetic": "/prɪˈtend/",
+    "page": 48,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "private",
+    "zh": "adj. 私人的；私有的",
+    "phonetic": "/ˈpraɪvət/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "probably",
+    "zh": "adv. 很可能，大概",
+    "phonetic": "/ˈprɒbəbli/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "problem",
+    "zh": "n. 棘手的问题，难题，困难",
+    "phonetic": "/ˈprɒbləm/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "programme",
+    "zh": "n. 计划，方案，活动安排；节目",
+    "phonetic": "/ˈprəʊɡræm/",
+    "page": 38,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "project",
+    "zh": "n. 项目；专题研究",
+    "phonetic": "/ˈprɒdʒekt/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "promise",
+    "zh": "vt. & vi. 许诺， 承诺，保证 n. 诺言，许诺，承诺",
+    "phonetic": "/ˈprɒmɪs/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "provide",
+    "zh": "vt. 提供；供应；给予",
+    "phonetic": "/prəˈvaɪd/",
+    "page": 77,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "publish",
+    "zh": "vt. 出版，发行；发表，刊登，登载",
+    "phonetic": "/ˈpʌblɪʃ/",
+    "page": 70,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "pull-up",
+    "zh": "n. 引体向上",
+    "phonetic": "/ˈpʊl ʌp/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "purpose",
+    "zh": "n. 目的，意图",
+    "phonetic": "/ˈpɜːpəs/",
+    "page": 2,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "push",
+    "zh": "vt. & vi. 推，推动；促使",
+    "phonetic": "/pʊʃ/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "push-up",
+    "zh": "n. 俯卧撑",
+    "phonetic": "/ˈpʊʃ ʌp/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "quality",
+    "zh": "n. 人品，素质；质量，品质",
+    "phonetic": "/ˈkwɒləti/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "railway",
+    "zh": "n. 铁路，铁道",
+    "phonetic": "/ˈreɪlweɪ/",
+    "page": 102,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "rapidly",
+    "zh": "adv. 迅速地，快速地",
+    "phonetic": "/ˈræpɪdli/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "real",
+    "zh": "adj. 真实的，实际存在的；真正的",
+    "phonetic": "/ˈriːəl/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "realise",
+    "zh": "vt. & vi. 认识到，意识到，理解，领会",
+    "phonetic": "/ˈrɪəlaɪz/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "reason",
+    "zh": "n. 原因，理由",
+    "phonetic": "/ˈriːzn/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "receive",
+    "zh": "vt. 拿到，接到，收到",
+    "phonetic": "/rɪˈsiːv/",
+    "page": 46,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "refuse",
+    "zh": "vt. & vi. 拒绝，回绝",
+    "phonetic": "/rɪˈfjuːz/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "relate",
+    "zh": "vt. 联系，使有联系，把……联系起来",
+    "phonetic": "/rɪˈleɪt/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "relationship",
+    "zh": "n. 关系，联系",
+    "phonetic": "/rɪˈleɪʃnʃɪp/",
+    "page": 49,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "relative",
+    "zh": "n. 亲戚，亲属 adj. 相对的，相关联的",
+    "phonetic": "/ˈrelətɪv/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "remain",
+    "zh": "linking v. 仍然是，保持不变",
+    "phonetic": "/rɪˈmeɪn/",
+    "page": 114,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "repeat",
+    "zh": "vt. & vi. 重做，重复 vt. 重复；复述",
+    "phonetic": "/rɪˈpiːt/",
+    "page": 41,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "replace",
+    "zh": "vt. 代替；（用……）替换",
+    "phonetic": "/rɪˈpleɪs/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "research",
+    "zh": "n. 研究，调查 vt. & vi. 研究，调查",
+    "phonetic": "/rɪˈsɜːtʃ/",
+    "page": 96,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "resolution",
+    "zh": "n. 决心，决定",
+    "phonetic": "/ˌrezəˈluːʃn/",
+    "page": 140,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "respect",
+    "zh": "vt. & n. 尊敬，尊重",
+    "phonetic": "/rɪˈspekt/",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "respected",
+    "zh": "adj. 受人尊敬的",
+    "phonetic": "/rɪˈspektɪd/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "rest",
+    "zh": "n. 剩余部分，其余；休息时间 vt. & vi. 休息，放松",
+    "phonetic": "/rest/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "result",
+    "zh": "n. 结果；后果",
+    "phonetic": "/rɪˈzʌlt/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "return",
+    "zh": "vt., vi. & n. 回来，返回；回报",
+    "phonetic": "/rɪˈtɜːn/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "reunion",
+    "zh": "n. 相聚，团圆；重逢，团聚，聚会",
+    "phonetic": "/ˌriːˈjuːniən/",
+    "page": 114,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "ride",
+    "zh": "vt. & vi. 骑 n. （乘车或骑车的）短途旅程",
+    "phonetic": "/raɪd/",
+    "page": 27,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "ring",
+    "zh": "n. 环状物；戒指 vt. & vi. 响起铃声",
+    "phonetic": "/rɪŋ/",
+    "page": 4,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "risk",
+    "zh": "n. 危险，风险 vt. 面临危险，使处于危险境地",
+    "phonetic": "/rɪsk/",
+    "page": 36,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "rocket",
+    "zh": "n. 火箭",
+    "phonetic": "/ˈrɒkɪt/",
+    "page": 84,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "role model",
+    "zh": "楷模，行为榜样",
+    "phonetic": "",
+    "page": 67,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "roller coaster",
+    "zh": "过山车",
+    "phonetic": "",
+    "page": 49,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "rope",
+    "zh": "n. 粗绳，线缆，绳索",
+    "phonetic": "/rəʊp/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "ruin",
+    "zh": "vt. 毁坏；破坏",
+    "phonetic": "/ˈruːɪn/",
+    "page": 60,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "rush",
+    "zh": "vt. & vi. 迅速移动；仓促行事",
+    "phonetic": "/rʌʃ/",
+    "page": 43,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "safety",
+    "zh": "n. 安全，平安；安全性",
+    "phonetic": "/ˈseɪfti/",
+    "page": 23,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "sale",
+    "zh": "n. 出售，销售",
+    "phonetic": "/seɪl/",
+    "page": 104,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "scared",
+    "zh": "adj. 害怕，恐惧",
+    "phonetic": "/skeəd/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "scenery",
+    "zh": "n. 风景，景色，风光",
+    "phonetic": "/ˈsiːnəri/",
+    "page": 92,
+    "starred": true,
+    "unitNumber": 5
+  },
+  {
+    "en": "score",
+    "zh": "vt. & vi. 得分 n. 得分，比分；分数，成绩",
+    "phonetic": "/skɔː/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "search",
+    "zh": "vt., vi. & n. 搜索，搜寻，搜查，查找",
+    "phonetic": "/sɜːtʃ/",
+    "page": 121,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "secret",
+    "zh": "n. 诀窍；秘密 adj. 秘密的；保密的",
+    "phonetic": "/ˈsiːkrət/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "seem",
+    "zh": "linking v. 好像，似乎，看来",
+    "phonetic": "/siːm/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "selfless",
+    "zh": "adj. 无私的",
+    "phonetic": "/ˈselfləs/",
+    "page": 138,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "send",
+    "zh": "vt. 发送，邮寄",
+    "phonetic": "/send/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "service",
+    "zh": "n. 公共服务系统；服务",
+    "phonetic": "/ˈsɜːvɪs/",
+    "page": 38,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "set",
+    "zh": "adj. 安排好的，确定的，固定的 vt. 安排，确定，决定",
+    "phonetic": "/set/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "shall",
+    "zh": "modal v. 表示提出或征求意见；将要，将会",
+    "phonetic": "/ʃæl/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "shoot",
+    "zh": "vt. & vi. 开（枪或其他武器），射击，发射",
+    "phonetic": "/ʃuːt/",
+    "page": 71,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "shout",
+    "zh": "vt. & vi. 大声说；斥责；喊叫",
+    "phonetic": "/ʃaʊt/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "sidewalk",
+    "zh": "n. 人行道",
+    "phonetic": "/ˈsaɪdwɔːk/",
+    "page": 36,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "signal",
+    "zh": "n. 信号，暗号；预示",
+    "phonetic": "/ˈsɪɡnəl/",
+    "page": 36,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "silk",
+    "zh": "n. 丝织物，丝绸；（蚕）丝",
+    "phonetic": "/sɪlk/",
+    "page": 107,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "simple",
+    "zh": "adj. 易于理解的，易做的，简单的",
+    "phonetic": "/ˈsɪmpl/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "simply",
+    "zh": "adv. 确实，简直；仅仅",
+    "phonetic": "/ˈsɪmpli/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "since",
+    "zh": "adv. & prep. 自……以后， 从……以来 conj. 从……以后，自……以来；因为，由于，既然",
+    "phonetic": "/sɪns/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "situation",
+    "zh": "n. 情况，状况，形势",
+    "phonetic": "/ˌsɪtʃuˈeɪʃn/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "sit-up",
+    "zh": "n. 仰卧起坐",
+    "phonetic": "/ˈsɪt ʌp/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "slim",
+    "zh": "adj. 苗条的，纤细的",
+    "phonetic": "/slɪm/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "sociable",
+    "zh": "adj. 好交际的，合群的，友好的",
+    "phonetic": "/ˈsəʊʃəbl/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "social",
+    "zh": "adj. 社交的，交际的；社会的",
+    "phonetic": "/ˈsəʊʃl/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "social media",
+    "zh": "网络社交媒体",
+    "phonetic": "",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "solar",
+    "zh": "adj. 太阳能的，太阳的",
+    "phonetic": "/ˈsəʊlə/",
+    "page": 77,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "soldier",
+    "zh": "n. 军人，士兵",
+    "phonetic": "/ˈsəʊldʒə/",
+    "page": 68,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "solve",
+    "zh": "vt. 解决，处理；破解",
+    "phonetic": "/sɒlv/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "someone",
+    "zh": "pron. 某人；重要人物",
+    "phonetic": "/ˈsʌmwʌn/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "spirit",
+    "zh": "n. 精神，心灵；意志",
+    "phonetic": "/ˈspɪrɪt/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "spread",
+    "zh": "vt. & vi. 传播，散布，（使）流传；蔓延， 扩散",
+    "phonetic": "/spred/",
+    "page": 129,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "stage",
+    "zh": "n. 时期，阶段",
+    "phonetic": "/steɪdʒ/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "stand",
+    "zh": "vt. & vi. 容忍，忍受；站立，直立",
+    "phonetic": "/stænd/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "stay up",
+    "zh": "深夜不睡，熬夜",
+    "phonetic": "",
+    "page": 114,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "steal",
+    "zh": "vt. & vi. 偷，窃取",
+    "phonetic": "/stiːl/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "step",
+    "zh": "vi. 迈步，行走 n. 迈步，脚步声",
+    "phonetic": "/step/",
+    "page": 11,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "stick",
+    "zh": "vt. & vi. 粘贴，粘住；卡住",
+    "phonetic": "/stɪk/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "stick to",
+    "zh": "坚持",
+    "phonetic": "",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "stranger",
+    "zh": "n. 陌生人；外地人",
+    "phonetic": "/ˈstreɪndʒə/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "stressful",
+    "zh": "adj. 压力重的，紧张的",
+    "phonetic": "/ˈstresfl/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "strict",
+    "zh": "adj. 要求严格的，严厉的；严格的",
+    "phonetic": "/strɪkt/",
+    "page": 63,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "struggle",
+    "zh": "vi. 奋斗，努力，争取；斗争，抗争",
+    "phonetic": "/ˈstrʌɡl/",
+    "page": 76,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "style",
+    "zh": "n. 风格；方式，作风",
+    "phonetic": "/staɪl/",
+    "page": 126,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "succeed",
+    "zh": "vi. 成功",
+    "phonetic": "/səkˈsiːd/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "success",
+    "zh": "n. 成功，胜利",
+    "phonetic": "/səkˈses/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "such",
+    "zh": "det. & pron. 这样的，那样的，类似的",
+    "phonetic": "/sʌtʃ/",
+    "page": 27,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "such as",
+    "zh": "例如；诸如……之类",
+    "phonetic": "",
+    "page": 27,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "suggest",
+    "zh": "vt. 建议，提议",
+    "phonetic": "/səˈdʒest/",
+    "page": 121,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "surf",
+    "zh": "vt. （互联网上）冲浪，浏览 vt. & vi. 冲浪",
+    "phonetic": "/sɜːf/",
+    "page": 32,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "surprised",
+    "zh": "adj. 惊奇的，惊讶的",
+    "phonetic": "/səˈpraɪzd/",
+    "page": 46,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "survey",
+    "zh": "n. 民意调查；总体研究",
+    "phonetic": "/ˈsɜːveɪ/",
+    "page": 14,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "swimsuit",
+    "zh": "n. 游泳衣",
+    "phonetic": "/ˈswɪmsuːt/",
+    "page": 16,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "symbolise",
+    "zh": "vt. 象征，代表",
+    "phonetic": "/ˈsɪmbəlaɪz/",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "system",
+    "zh": "n. 系统；制度，体系",
+    "phonetic": "/ˈsɪstəm/",
+    "page": 77,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "take care of",
+    "zh": "照顾，照料",
+    "phonetic": "",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "take part",
+    "zh": "参与某事",
+    "phonetic": "",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "take place",
+    "zh": "发生，进行",
+    "phonetic": "",
+    "page": 5,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "task",
+    "zh": "n. 任务，工作；活动",
+    "phonetic": "/tɑːsk/",
+    "page": 80,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "tear",
+    "zh": "vt. 拉掉，撕掉  vt. & vi. 撕裂；撕碎 /tɪə/ n. 眼泪，泪水",
+    "phonetic": "/teə/",
+    "page": 71,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "teenager",
+    "zh": "n. 青少年",
+    "phonetic": "/ˈtiːneɪdʒə/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "test",
+    "zh": "n., vt. & vi. 测验，考查；试验，测试",
+    "phonetic": "/test/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "text",
+    "zh": "n. （手机）短信；文本；文章",
+    "phonetic": "/tekst/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "thirsty",
+    "zh": "adj. 渴的，口渴的",
+    "phonetic": "/ˈθɜːsti/",
+    "page": 16,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "though",
+    "zh": "adv. 不过，可是，然而 conj. 虽然，尽管；不过，可是",
+    "phonetic": "/ðəʊ/",
+    "page": 139,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "throat",
+    "zh": "n. 咽喉，喉咙",
+    "phonetic": "/θrəʊt/",
+    "page": 41,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "throughout",
+    "zh": "prep. & adv. 自始至终，贯穿整个时期；各处，遍及",
+    "phonetic": "/θruːˈaʊt/",
+    "page": 114,
+    "starred": true,
+    "unitNumber": 6
+  },
+  {
+    "en": "throw",
+    "zh": "vt. 举行聚会 vt. & vi. 投，掷",
+    "phonetic": "/θrəʊ/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "thunder",
+    "zh": "n. 雷，雷声",
+    "phonetic": "/ˈθʌndə/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "thunderstorm",
+    "zh": "n. 雷雨，雷暴，雷雨交加",
+    "phonetic": "/ˈθʌndəstɔːm/",
+    "page": 30,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "Thursday",
+    "zh": "n. 星期四",
+    "phonetic": "/ˈθɜːzdeɪ/",
+    "page": 38,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "ticket",
+    "zh": "n. 票，券",
+    "phonetic": "/ˈtɪkɪt/",
+    "page": 90,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "timetable",
+    "zh": "n. 时间安排；时间表，时刻表",
+    "phonetic": "/ˈtaɪmteɪbl/",
+    "page": 135,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "tip",
+    "zh": "n. 实用的提示；尖端",
+    "phonetic": "/tɪp/",
+    "page": 25,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "togetherness",
+    "zh": "n. 和睦相处，亲密无间，团结友爱",
+    "phonetic": "/təˈɡeðənəs/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "tonight",
+    "zh": "adv. 在今夜，在今晚 n. 今夜，今晚",
+    "phonetic": "/təˈnaɪt/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "tool",
+    "zh": "n. 工具；用具",
+    "phonetic": "/tuːl/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "torch",
+    "zh": "n. 手电筒",
+    "phonetic": "/tɔːtʃ/",
+    "page": 24,
+    "starred": true,
+    "unitNumber": 2
+  },
+  {
+    "en": "totally",
+    "zh": "adv. 完全，全部，整个",
+    "phonetic": "/ˈtəʊtəli/",
+    "page": 16,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "tour",
+    "zh": "n. 旅行，旅游 vt. & vi. 在……旅游",
+    "phonetic": "/tʊə/",
+    "page": 98,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "trade",
+    "zh": "vt. & vi. 做买卖，做生意 n. 贸易，买卖",
+    "phonetic": "/treɪd/",
+    "page": 107,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "tradition",
+    "zh": "n. 传统",
+    "phonetic": "/trəˈdɪʃn/",
+    "page": 115,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "traditional",
+    "zh": "adj. 传统的，习俗的，惯例的",
+    "phonetic": "/trəˈdɪʃənl/",
+    "page": 112,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "treat",
+    "zh": "vt. 医疗，治疗；以……方式对待",
+    "phonetic": "/triːt/",
+    "page": 24,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "twice",
+    "zh": "adv. 两次，两遍",
+    "phonetic": "/twaɪs/",
+    "page": 14,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "unbalanced",
+    "zh": "adj. 不持平的，偏颇的，失衡的",
+    "phonetic": "/ˌʌnˈbælənst/",
+    "page": 140,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "unchanged",
+    "zh": "adj. 不变，没有变化",
+    "phonetic": "/ʌnˈtʃeɪndʒd/",
+    "page": 114,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "uncomfortable",
+    "zh": "adj. 使人不舒服的， 令人不舒适的",
+    "phonetic": "/ʌnˈkʌmftəbl/",
+    "page": 55,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "understand",
+    "zh": "vt. & vi. 了解，体谅；懂，理解； 认识到",
+    "phonetic": "/ˌʌndəˈstænd/",
+    "page": 137,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "uniform",
+    "zh": "n. 队服；制服，校服",
+    "phonetic": "/ˈjuːnɪfɔːm/",
+    "page": 16,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "union",
+    "zh": "n. 联合，结合；同盟",
+    "phonetic": "/ˈjuːniən/",
+    "page": 5,
+    "starred": true,
+    "unitNumber": 1
+  },
+  {
+    "en": "unkind",
+    "zh": "adj. 不友善的，不亲切的，不客气的， 刻薄的",
+    "phonetic": "/ˌʌnˈkaɪnd/",
+    "page": 60,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "updated",
+    "zh": "adj. 更新的",
+    "phonetic": "/ˌʌpˈdeɪtɪd/",
+    "page": 80,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "ups and downs",
+    "zh": "浮沉，兴衰，荣辱",
+    "phonetic": "",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "upset",
+    "zh": "adj. 难过，不高兴，沮丧 /ʌpˈset/ vt. 使烦恼，使心烦意乱",
+    "phonetic": "/ˌʌpˈset/",
+    "page": 48,
+    "starred": true,
+    "unitNumber": 3
+  },
+  {
+    "en": "useful",
+    "zh": "adj. 有用的，有帮助的",
+    "phonetic": "/ˈjuːsfl/",
+    "page": 136,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "vacation",
+    "zh": "n. 假期；度假",
+    "phonetic": "/veɪˈkeɪʃn/",
+    "page": 18,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "van",
+    "zh": "n. 客货车，厢式送货车",
+    "phonetic": "/væn/",
+    "page": 77,
+    "starred": true,
+    "unitNumber": 4
+  },
+  {
+    "en": "victory",
+    "zh": "n. 胜利，成功",
+    "phonetic": "/ˈvɪktəri/",
+    "page": 131,
+    "starred": false,
+    "unitNumber": 6
+  },
+  {
+    "en": "video",
+    "zh": "n. 视频；录像",
+    "phonetic": "/ˈvɪdiəʊ/",
+    "page": 93,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "virus",
+    "zh": "n. 病毒",
+    "phonetic": "/ˈvaɪrəs/",
+    "page": 32,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "voluntary",
+    "zh": "adj. 志愿的，自愿性的，义务性的",
+    "phonetic": "/ˈvɒləntri/",
+    "page": 74,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "wallet",
+    "zh": "n. 钱包，皮夹子",
+    "phonetic": "/ˈwɒlɪt/",
+    "page": 27,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "war",
+    "zh": "n. 战争",
+    "phonetic": "/wɔː/",
+    "page": 85,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "watch out",
+    "zh": "密切注意，留意；小心，当心",
+    "phonetic": "",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "waterfall",
+    "zh": "n. 瀑布",
+    "phonetic": "/ˈwɔːtəfɔːl/",
+    "page": 90,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "wavy",
+    "zh": "adj. 波浪形的；起伏不平的",
+    "phonetic": "/ˈweɪvi/",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "wear out",
+    "zh": "磨薄，穿破",
+    "phonetic": "",
+    "page": 10,
+    "starred": false,
+    "unitNumber": 1
+  },
+  {
+    "en": "website",
+    "zh": "n. 网站",
+    "phonetic": "/ˈwebsaɪt/",
+    "page": 33,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "well built",
+    "zh": "身强力壮的，体格健美的",
+    "phonetic": "",
+    "page": 54,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "what’s more",
+    "zh": "更有甚者，更为重要的是",
+    "phonetic": "",
+    "page": 80,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "wheel",
+    "zh": "n. 轮，车轮，轮子",
+    "phonetic": "/wiːl/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "whenever",
+    "zh": "conj. 在任何……的时候，无论何时",
+    "phonetic": "/wenˈevə/",
+    "page": 58,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "while",
+    "zh": "conj. 在……期间，当……的时候；虽然，尽管",
+    "phonetic": "/waɪl/",
+    "page": 48,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "wisely",
+    "zh": "adv. 明智地，高明地",
+    "phonetic": "/ˈwaɪzli/",
+    "page": 26,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "without",
+    "zh": "prep. 没有；缺乏；不和……在一起",
+    "phonetic": "/wɪˈðaʊt/",
+    "page": 36,
+    "starred": false,
+    "unitNumber": 2
+  },
+  {
+    "en": "wood",
+    "zh": "n. 树林，林地；木头",
+    "phonetic": "/wʊd/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "wooden",
+    "zh": "adj. 木制的，木头的",
+    "phonetic": "/ˈwʊdn/",
+    "page": 70,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "workplace",
+    "zh": "n. 工作场所",
+    "phonetic": "/ˈwɜːkpleɪs/",
+    "page": 76,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "worried",
+    "zh": "adj. 担心的，担忧的，发愁的",
+    "phonetic": "/ˈwʌrid/",
+    "page": 46,
+    "starred": false,
+    "unitNumber": 3
+  },
+  {
+    "en": "wounded",
+    "zh": "adj. 受伤的，负伤的；受伤害的",
+    "phonetic": "/ˈwuːndɪd/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "X-ray",
+    "zh": "n. X射线，X光；X光照片",
+    "phonetic": "/ˈeks reɪ/",
+    "page": 138,
+    "starred": false,
+    "unitNumber": 4
+  },
+  {
+    "en": "yet",
+    "zh": "adv. 用于否定句和疑问句，谈论尚未发生但可能发生的事",
+    "phonetic": "/jet/",
+    "page": 99,
+    "starred": false,
+    "unitNumber": 5
+  },
+  {
+    "en": "zebra crossing",
+    "zh": "斑马线，人行横道",
+    "phonetic": "",
+    "page": 36,
+    "starred": false,
+    "unitNumber": 2
+  }
+]

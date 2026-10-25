@@ -1,0 +1,496 @@
+[
+  {
+    "id": "bnu-grade4-upper-2024",
+    "title": "北师大版英语 · 4年级上册（2024新版）",
+    "publisher": "北师大版",
+    "grade": 4,
+    "semester": "上册",
+    "startGrade": 3,
+    "edition": "2024审核新版（版权页待核）",
+    "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=c494adce9856472f8929494ade44c6cc&type=SYN&contributeId=c4501493b21f48bb9edb1b5fc8fab05c&tp=Ebook",
+    "file": "/data/bnu-grade4-upper-2024.csv",
+    "rows": 131,
+    "sha256": "3849af5981a9dc8def334613e50fe0a9aebd58b4eadef2881b3bdc4caca37638",
+    "sourceFile": "bnu-primary-2024-reviewed.json",
+    "rawSha256": "607777f149da0d9188bc008c0ad40b41f0354e496dc48239ad6aef16f563965f",
+    "evidenceFiles": [
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/cover.jpg",
+        "sha256": "907cfc98a9293f6c26feefcca3945bc4f10be85db867a20a9617e108757ca119"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/1.jpg",
+        "sha256": "7589a734e27bc56daa17982e5eca8dc92414138eac6279621bf53e12141bcb40"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/2.jpg",
+        "sha256": "a3712ec7c4dfb690fe3020f73c407f4be23fae69925a39cc5839ce16f45a6167"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/80.jpg",
+        "sha256": "760bc98fd81209c07d4b30a5561a854c88fb05b4166c6cec0a492f918ef2eac1"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/81.jpg",
+        "sha256": "599d6aa030d938e077248081d18c67e9cccf4fbea9c0391f3d4bf961a13120e1"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/82.jpg",
+        "sha256": "8d20c344bac1b4e9848a0b6a5e923d69c8bc81bdea4e45b40bc0d279834091f6"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/83.jpg",
+        "sha256": "47f940d1c362e44c2a67ec67081e9b95a681aae7d3e7ff8266195d1f9aa87f06"
+      }
+    ],
+    "evidenceAvailability": "local-only",
+    "verification": {
+      "edition": "pending",
+      "cover": "checked",
+      "copyright": "pending",
+      "units": "checked",
+      "meanings": "checked"
+    },
+    "contentNote": "三年级起点；封面确认国家教材委员会专家委员会审核通过2024。131条单词、短语及交际用语已逐条对照出版社Word bank 75–77页，按教材单元整理，保留课内释义。含Review新增词条。版权页、ISBN、音标及教材录音待核；当前使用系统英语朗读。旧版独立保留。"
+  },
+  {
+    "id": "bnu-grade4-lower-2024",
+    "title": "北师大版英语 · 4年级下册（2024新版）",
+    "publisher": "北师大版",
+    "grade": 4,
+    "semester": "下册",
+    "startGrade": 3,
+    "edition": "2024审核新版（版权页待核）",
+    "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=4beaad211ff64da0b5644abe111d0e78&type=SYN&contributeId=6fd88d0b3fc7493b9a2b4f2235f52032&tp=Ebook",
+    "file": "/data/bnu-grade4-lower-2024.csv",
+    "rows": 97,
+    "sha256": "40c9127ad3447a866cb32c8aa95f71a085c1637fbb9fb9f76143dadee61de48d",
+    "sourceFile": "bnu-primary-2024-reviewed.json",
+    "rawSha256": "607777f149da0d9188bc008c0ad40b41f0354e496dc48239ad6aef16f563965f",
+    "evidenceFiles": [
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/cover.jpg",
+        "sha256": "6e5b8bfa4cc3ba7af69649eeba9888623d677b81da487e154f2b719121bab220"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/1.jpg",
+        "sha256": "51b61b4281816006f139f11ca1a9bd28960f263a24320b34275bd5020a570166"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/2.jpg",
+        "sha256": "725e3c97660df05f919ec0dceda79ef9f8d4a44b36ec61cfa2c0b703eeac26c2"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/80.jpg",
+        "sha256": "9bed2e13e43e555385b30df50599698fcb6b312bd938fb217554bb4341774884"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/81.jpg",
+        "sha256": "7479ea9a8d467835bd2fcc7db527934d3944c7859d0f50ac55e3f33bb37b3653"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/82.jpg",
+        "sha256": "1b4465f430fad795cf27f526925b18b6a3b83e476678b43c0b670f406d83fb74"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/83.jpg",
+        "sha256": "6d55e6036d8c44d5b309f535725f5ce37e7292d27927aab01e4117cd7fc6eb09"
+      }
+    ],
+    "evidenceAvailability": "local-only",
+    "verification": {
+      "edition": "pending",
+      "cover": "checked",
+      "copyright": "pending",
+      "units": "checked",
+      "meanings": "checked"
+    },
+    "contentNote": "三年级起点；封面确认国家教材委员会专家委员会审核通过2024。97条单词、短语及交际用语已逐条对照出版社Word bank 75–77页，按教材单元整理，保留课内释义。Review未列新增词条，不另造词条。版权页、ISBN、音标及教材录音待核；当前使用系统英语朗读。旧版独立保留。"
+  },
+  {
+    "id": "bnu-grade5-upper-2024",
+    "title": "北师大版英语 · 5年级上册（2024新版）",
+    "publisher": "北师大版",
+    "grade": 5,
+    "semester": "上册",
+    "startGrade": 3,
+    "edition": "2024审核新版（版权页待核）",
+    "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=841de7443f1d44e6877ece880089dbcf&type=SYN&contributeId=6ab43e71f12f4bd38bba0495498497cb&tp=Ebook",
+    "file": "/data/bnu-grade5-upper-2024.csv",
+    "rows": 71,
+    "sha256": "8066241e1713d77a3b475412c78129c26f53f38f8ddd252f1aedea738f4f31b7",
+    "sourceFile": "bnu-primary-2024-reviewed.json",
+    "rawSha256": "607777f149da0d9188bc008c0ad40b41f0354e496dc48239ad6aef16f563965f",
+    "evidenceFiles": [
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/cover.jpg",
+        "sha256": "b50bd7749fba77b57bd7fe50b56d767a6550dc2e553c6310edcf2ad55d0dc66c"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/1.jpg",
+        "sha256": "b44cd89d4ab8680fa9d4c337069632ab5b1dd26d91b706fff7dd3f495d008a09"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/2.jpg",
+        "sha256": "4488949cb6a087462a0b72dafef3b0295c952733cc4de5cd55333458c6ee94df"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/80.jpg",
+        "sha256": "67db19d801cffbd62a7692087829712da1027f4cb1684a3572a29879463bff26"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/81.jpg",
+        "sha256": "474b1008be83d926896161b784a189f2d756bf45b99fd4f5f485c5a3118b79a7"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/82.jpg",
+        "sha256": "6446db440469655ce936029c67f57e51b221568328550aaf3e7125062a5648aa"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/83.jpg",
+        "sha256": "95f19b4261b16d3deeef3b1a5f177ec2e01dc76dcedced2f75e251853c45ad41"
+      }
+    ],
+    "evidenceAvailability": "local-only",
+    "verification": {
+      "edition": "pending",
+      "cover": "checked",
+      "copyright": "pending",
+      "units": "checked",
+      "meanings": "checked"
+    },
+    "contentNote": "三年级起点；封面确认国家教材委员会专家委员会审核通过2024。71条单词、短语及交际用语已逐条对照出版社Word bank 75–77页，按教材单元整理，保留课内释义。含Review新增词条。版权页、ISBN、音标及教材录音待核；当前使用系统英语朗读。旧版独立保留。"
+  },
+  {
+    "id": "bnu-grade6-upper-2024",
+    "title": "北师大版英语 · 6年级上册（2024新版）",
+    "publisher": "北师大版",
+    "grade": 6,
+    "semester": "上册",
+    "startGrade": 3,
+    "edition": "2024审核新版（版权页待核）",
+    "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=7d62ac6149654446a34d3bc252991e40&type=SYN&contributeId=4c88b6b05344488a9e3c015320cf52f2&tp=Ebook",
+    "file": "/data/bnu-grade6-upper-2024.csv",
+    "rows": 89,
+    "sha256": "d23e3b25c246fcad4278ab3b6a36c39e9ee4570b704bd82f487466eed79817cf",
+    "sourceFile": "bnu-primary-2024-reviewed.json",
+    "rawSha256": "607777f149da0d9188bc008c0ad40b41f0354e496dc48239ad6aef16f563965f",
+    "evidenceFiles": [
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/cover.jpg",
+        "sha256": "89bc867712f25d8f4e2a5e91b8beb78cdcc07bd2fda530fe49546cd7e10edbef"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/1.jpg",
+        "sha256": "85d2b0bd6958237f1df68d3be87aac0ad9daf7e216dcfe2b6baec4b5dfe4399f"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/2.jpg",
+        "sha256": "f2d5fe3ed3bf29e56033e7acedb8be1c9be30e988c3ce8a980c7020c48f9bf6f"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/80.jpg",
+        "sha256": "644fda96cce812ef0cca64e05e7120db1feb3bddeeb7a2a561b4e47a0fb7a8aa"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/81.jpg",
+        "sha256": "a0b6f356df5537b987720350995718160ae5be5878836d9537ae63461eb3294b"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/82.jpg",
+        "sha256": "0e8e36a23a8eeae51ba3310ffb1d9f5589dfba3245ddf12410dd60b08ed90a30"
+      },
+      {
+        "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/83.jpg",
+        "sha256": "949b5452cc2b3368c8bd3c676346d02501c63bb69273e48e4b8776545f04d2a1"
+      }
+    ],
+    "evidenceAvailability": "local-only",
+    "verification": {
+      "edition": "pending",
+      "cover": "checked",
+      "copyright": "pending",
+      "units": "checked",
+      "meanings": "checked"
+    },
+    "contentNote": "三年级起点；封面确认国家教材委员会专家委员会审核通过2024。89条单词、短语及交际用语已逐条对照出版社Word bank 75–77页，按教材单元整理，保留课内释义。Review未列新增词条，不另造词条。版权页、ISBN、音标及教材录音待核；当前使用系统英语朗读。旧版独立保留。"
+  },
+  {
+    "id": "bnu-grade8-upper-2024",
+    "title": "北师大版英语 · 8年级上册（2024新版）",
+    "publisher": "北师大版",
+    "grade": 8,
+    "semester": "上册",
+    "startGrade": 7,
+    "edition": "2024审核新版（版权页待核）",
+    "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=bcaea735884649bdad5d81eb2b6f652b&type=SYN&contributeId=dabd044b4c5146b79e544fe2d3e31ce9&tp=Ebook",
+    "file": "/data/bnu-grade8-upper-2024.csv",
+    "rows": 460,
+    "sha256": "ad984f22c107b00dcfcccffa53ec441c26e761c030a0625e38120f3d5c384821",
+    "sourceFile": "bnu-grade8-upper-2024-source.docx",
+    "rawSha256": "c8c86d768329a6a971d4c8a0ee0609c128caa95f110ff91f7a65dfc726811af7",
+    "isbn": "978-7-303-30739-5",
+    "isbnEvidence": "出版社2025秋书目；尚未核对版权页原图",
+    "verification": {
+      "edition": "pending",
+      "cover": "checked",
+      "copyright": "pending",
+      "units": "checked",
+      "meanings": "checked"
+    },
+    "contentNote": "封面确认国家教材委员会专家委员会审核通过2024；6单元460条主词表已对照出版社课本词汇页及A-Z词表。版权页原图尚缺，版次年月待核；ISBN由出版社书目交叉确认。未含附录专名、国地名、人名。旧版独立保留，复习进度不自动迁移。"
+  },
+  {
+    "id": "bnu-grade4-upper",
+    "title": "北师大版英语 · 4年级上册",
+    "publisher": "北师大版",
+    "grade": 4,
+    "semester": "上册",
+    "startGrade": 3,
+    "edition": "2013审定版（版次年月待核）",
+    "source": "https://keben.szxuexiao.com/html/9494.html",
+    "file": "/data/bnu-grade4-upper-reviewed.csv",
+    "rows": 97,
+    "rawRows": 106,
+    "sha256": "50bb9a4b93573cfa597dd9b6f2457da2f69ec6b30edff347cec468a20fccd487",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版三年级起点四年级上.xlsx",
+    "gitBlob": "288d1bae30169011c491c17944df602060467f89",
+    "rawSha256": "f3f81deef2345cd80dd2d5ba40a0a551418a7ae350c093d9e729f8fb75a0860b",
+    "verification": {
+      "edition": "pending",
+      "units": "checked",
+      "meanings": "checked"
+    },
+    "contentNote": "2013审定版：6个单元与课内释义已逐条对照扫描词汇页。版权页版次年月、ISBN、教材录音仍待核验；不适用于以 Back to school 开头的修订版。"
+  },
+  {
+    "id": "bnu-grade4-lower",
+    "title": "北师大版英语 · 4年级下册",
+    "publisher": "北师大版",
+    "grade": 4,
+    "semester": "下册",
+    "startGrade": 3,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade4-lower.csv",
+    "rows": 98,
+    "rawRows": 98,
+    "sha256": "7faadbe777a83518d3caa5a0245aba0aaf5e411e950df6f73756f1497f5c994b",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版三年级起点四年级下.xlsx",
+    "gitBlob": "f6e24e61a5d513e958ecf40a717c57bfbfc5f049",
+    "rawSha256": "149510d87641c714230fab468fd8d2c8aecc883aabb2d9b810f526644f1ffd6c",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade5-upper",
+    "title": "北师大版英语 · 5年级上册",
+    "publisher": "北师大版",
+    "grade": 5,
+    "semester": "上册",
+    "startGrade": 3,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade5-upper.csv",
+    "rows": 89,
+    "rawRows": 89,
+    "sha256": "1969a736ab2314c88120434bf8acd95db3e8d5d807b873ba2e038bfafb90f4ad",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版三年级起点五年级上.xlsx",
+    "gitBlob": "55011cf2bb9d0904dd56f23639637e7e923dc476",
+    "rawSha256": "6b13529af98d2cc639fa9dc29a97bd51e9e6041ab773e758382a21477738e9fa",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade5-lower",
+    "title": "北师大版英语 · 5年级下册",
+    "publisher": "北师大版",
+    "grade": 5,
+    "semester": "下册",
+    "startGrade": 3,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade5-lower.csv",
+    "rows": 79,
+    "rawRows": 79,
+    "sha256": "ee5ce31ed1fa44ae2c89b328002a33a1fa973878eec2e1d92474cc4cf4ccdff6",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版三年级起点五年级下.xlsx",
+    "gitBlob": "674c4c1898e75043d5c542109031bd3d8c8f0518",
+    "rawSha256": "8cd7760a9d4e6bbe5d318309fbf4675e90dffdda4b7d998a4fff22b80fe8cee2",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade6-upper",
+    "title": "北师大版英语 · 6年级上册",
+    "publisher": "北师大版",
+    "grade": 6,
+    "semester": "上册",
+    "startGrade": 3,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade6-upper.csv",
+    "rows": 136,
+    "rawRows": 136,
+    "sha256": "8267254fbd15613d1105d659a6881885aa4795c2abb47855257cf6bb6e15b42c",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版三年级起点六年级上.xlsx",
+    "gitBlob": "5b70f9ae8290d30a27107e1b92df4ff429c82257",
+    "rawSha256": "23da04dffef4975287827ed51336981edd892eb836d2e3d2ac048f0644962ed4",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade6-lower",
+    "title": "北师大版英语 · 6年级下册",
+    "publisher": "北师大版",
+    "grade": 6,
+    "semester": "下册",
+    "startGrade": 3,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade6-lower.csv",
+    "rows": 47,
+    "rawRows": 47,
+    "sha256": "4c846fc809c0dc2cd60bbff3777c2cefb5e9ea324601272da35c43acdabfe730",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版三年级起点六年级下.xlsx",
+    "gitBlob": "9c6fd41d0a039c48c9bbd4f937a557941143bda3",
+    "rawSha256": "9b72bb0131994c6144dbf6ea3422a4e49903900c870c02c17d0b0984baad535d",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade7-upper",
+    "title": "北师大版英语 · 7年级上册",
+    "publisher": "北师大版",
+    "grade": 7,
+    "semester": "上册",
+    "startGrade": 7,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade7-upper.csv",
+    "rows": 544,
+    "rawRows": 547,
+    "sha256": "d6e7647c31fccdb0fa87d9570ffc869c5dab7a5de4a24ce1a990143860dcaaf6",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版初中英语七年级上册.xlsx",
+    "gitBlob": "da23480db621d034db9e7819e2cc373f9f015617",
+    "rawSha256": "0ac75b1a6b38c04a883a13505ba8908e4145cefa2cf6b522d5917a694bd4833f",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade7-lower",
+    "title": "北师大版英语 · 7年级下册",
+    "publisher": "北师大版",
+    "grade": 7,
+    "semester": "下册",
+    "startGrade": 7,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade7-lower.csv",
+    "rows": 502,
+    "rawRows": 503,
+    "sha256": "ce89461ce27cc0cccc638f4676f68827cccef29e6f13d44a9fe1a3cc6ce22600",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版初中英语七年级下册.xlsx",
+    "gitBlob": "faab92d4a8435ac4be1a2bd1757ef0ef33a0bd7a",
+    "rawSha256": "f6067e6c78387bcfc8a02b431042a6f36b2116af3ace6562ab9cf03549e1b186",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade8-upper",
+    "title": "北师大版英语 · 8年级上册",
+    "publisher": "北师大版",
+    "grade": 8,
+    "semester": "上册",
+    "startGrade": 7,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade8-upper.csv",
+    "rows": 405,
+    "rawRows": 405,
+    "sha256": "551c9c79b30f60bffee2909d048f5a409b88085cc00500868fcb96529f3074ec",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版初中英语八年级上册.xlsx",
+    "gitBlob": "d33e2470db978f6f89ad2f72f1635a93ae3b1273",
+    "rawSha256": "b71c4d6de7c00c953884d3e3669dbd8fbb9efcb98451267f4aeb1d81825eaf5c",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade8-lower",
+    "title": "北师大版英语 · 8年级下册",
+    "publisher": "北师大版",
+    "grade": 8,
+    "semester": "下册",
+    "startGrade": 7,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade8-lower.csv",
+    "rows": 397,
+    "rawRows": 398,
+    "sha256": "26a9c676b44a50f1d96757013cfada98f455de87474d4ee932f2a5c8618fcf15",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版初中英语八年级下册.xlsx",
+    "gitBlob": "0b14df989653a9beba8446198c0e43a510ed8e0d",
+    "rawSha256": "5ffb707c2d7663d2fc83cc6d8aa7a5cfb8e00286b1dbd021119c6609bbc87e47",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  },
+  {
+    "id": "bnu-grade9-full",
+    "title": "北师大版英语 · 9年级全一册",
+    "publisher": "北师大版",
+    "grade": 9,
+    "semester": "全一册",
+    "startGrade": 7,
+    "edition": "版次待核对（候选）",
+    "source": "https://github.com/lilinji/English",
+    "file": "/data/bnu-grade9-full.csv",
+    "rows": 491,
+    "rawRows": 492,
+    "sha256": "9e2a3da4930c8b865918654e59c68efb667fc86662bcf4ebae64a307831aef26",
+    "sourceFile": "1.全国各大教材版本中小学同步/北师大/北师大版初中英语九年级全一册.xlsx",
+    "gitBlob": "d20ab296ef12c4163127151ecda96db10adc674a",
+    "rawSha256": "0b60be5fda461ab654915ee7df321559aca8333f3abb59205f9d28785482d90c",
+    "verification": {
+      "edition": "pending",
+      "units": "pending",
+      "meanings": "pending"
+    },
+    "contentNote": "候选资料：版次、单元和课内释义均未核验；当前保留来源词典释义，按整册学习。请先与正在使用的课本核对。"
+  }
+]

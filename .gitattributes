@@ -1,0 +1,6 @@
+# Catalog SHA256 covers exact bytes, including quoted definition newlines.
+* text=auto eol=lf
+public/data/*.csv -text whitespace=cr-at-eol
+public/data/*.xlsx -text
+public/data/bnu-primary-2024-reviewed.json -text whitespace=cr-at-eol
+*.cmd text eol=crlf

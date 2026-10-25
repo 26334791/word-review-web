@@ -1,0 +1,96 @@
+{
+  "checkedOn": "2026-10-25",
+  "publisher": "北京师范大学出版社",
+  "resourceId": "bcaea735884649bdad5d81eb2b6f652b",
+  "coverText": "国家教材委员会专家委员会审核通过2024",
+  "copyrightStatus": "pending: publisher functionPageList returned an empty list",
+  "isbn": "978-7-303-30739-5",
+  "isbnEvidence": "https://www.bnupg.com/docs/2025-10/5d9722d013864e0e87a26f45d3e04b77.pdf",
+  "wordSource": "https://www.100875.com.cn/show/resourceDetail_integral.html?resId=7500dde11a0600392c2EA1FA3657A71E5F11CCC29BDFE23B070&type=SYN",
+  "wordSourceTitle": "八年级上册单词表A-Z（2026秋）",
+  "wordScope": "460 main words and phrases from Units 1-6; excludes separate Proper Nouns, Countries and Places, Names appendices",
+  "unitCounts": [
+    86,
+    99,
+    91,
+    74,
+    46,
+    64
+  ],
+  "sourceImageFolder": "dzkb/czyy-new/8s",
+  "vocabularyImageNumbers": "169-182 correspond to printed pages166-179",
+  "evidenceHashes": [
+    {
+      "file": "contents-1.jpg",
+      "sha256": "67022a1cb655506e0d580eeabceada12e093c79b35802883ab1bd5b09e7a3066"
+    },
+    {
+      "file": "contents-2.jpg",
+      "sha256": "712365f74a635ba6b9046a728be7563120288311965b79dc5856250877a16c12"
+    },
+    {
+      "file": "contents-3.jpg",
+      "sha256": "c152f917f7b5b54be2ae0f4a5e89ce91341266b847946f4c358a630f8b912ab2"
+    },
+    {
+      "file": "cover.jpg",
+      "sha256": "c5d0e8e268fa511b6b5c8696980d39ca02b7df1660189825da7865e9416d7f86"
+    },
+    {
+      "file": "vocabulary-166.jpg",
+      "sha256": "d924d61faf01a6840fed8d76be929221f4d8983318eac6e8adb956fde387687b"
+    },
+    {
+      "file": "vocabulary-167.jpg",
+      "sha256": "fb84cc2d8e513a073c90afef146e790b31a3f5ca57cf508ba0c35dcfd8071b87"
+    },
+    {
+      "file": "vocabulary-168.jpg",
+      "sha256": "88c79484630ba058cfe8b49cd67220a0afc73650ea92fa834a85ebd3a58ab628"
+    },
+    {
+      "file": "vocabulary-169.jpg",
+      "sha256": "4f1cda90ddb5a96a6a1db71819b1dfc2ae5b21eadb442df4c122188d6386739c"
+    },
+    {
+      "file": "vocabulary-170.jpg",
+      "sha256": "b2a7b86e4ca5e602ee7f029d44d9e4f8c335083f4fd5d70a5e474b9f2ec879cd"
+    },
+    {
+      "file": "vocabulary-171.jpg",
+      "sha256": "20b6e3fdc76923ad06755782fb593791d5ceff8296b4e94ca5b09c9c1e5fd790"
+    },
+    {
+      "file": "vocabulary-172.jpg",
+      "sha256": "acceb328cad279918d6dead5c26519b0958061331d548cf06abae1696489c8ac"
+    },
+    {
+      "file": "vocabulary-173.jpg",
+      "sha256": "7cfba60965cfdd84e38aa4a2b30d758635e29c28a2512c6d3472abb9da3ddaf5"
+    },
+    {
+      "file": "vocabulary-174.jpg",
+      "sha256": "403215b2a52f945b0cbda5a8b5f404cc564da93107e8f555944c05e4e8a2c14b"
+    },
+    {
+      "file": "vocabulary-175.jpg",
+      "sha256": "2baa112111a0551ebef802dfed2bdd8dd3d7be9272be4dc5a656b4c55a946bd6"
+    },
+    {
+      "file": "vocabulary-176.jpg",
+      "sha256": "e05c64cb4f2c614aefa13f7b430871eb16540df08c4dcee22d073fd707105131"
+    },
+    {
+      "file": "vocabulary-177.jpg",
+      "sha256": "769f6c081e438036b572d122c8c012523364aa75a016c4e9e1aedd1099337735"
+    },
+    {
+      "file": "vocabulary-178.jpg",
+      "sha256": "81aac53c931671baf7a1f92050210c0498ebc144c97ed6cb84647d449cc40570"
+    },
+    {
+      "file": "vocabulary-179.jpg",
+      "sha256": "f5fb3ff25aba5608e75f878fb8c8c55dcf250c60c6fbd4e3243ed583563ee4fa"
+    }
+  ]
+}

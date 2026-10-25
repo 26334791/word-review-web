@@ -1,0 +1,142 @@
+{
+  "checkedOn": "2026-10-25",
+  "distribution": "Image originals retained locally; public repository contains provenance and hashes only",
+  "books": [
+    {
+      "id": "bnu-grade4-upper-2024",
+      "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=c494adce9856472f8929494ade44c6cc&type=SYN&contributeId=c4501493b21f48bb9edb1b5fc8fab05c&tp=Ebook",
+      "evidenceFiles": [
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/cover.jpg",
+          "sha256": "907cfc98a9293f6c26feefcca3945bc4f10be85db867a20a9617e108757ca119"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/1.jpg",
+          "sha256": "7589a734e27bc56daa17982e5eca8dc92414138eac6279621bf53e12141bcb40"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/2.jpg",
+          "sha256": "a3712ec7c4dfb690fe3020f73c407f4be23fae69925a39cc5839ce16f45a6167"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/80.jpg",
+          "sha256": "760bc98fd81209c07d4b30a5561a854c88fb05b4166c6cec0a492f918ef2eac1"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/81.jpg",
+          "sha256": "599d6aa030d938e077248081d18c67e9cccf4fbea9c0391f3d4bf961a13120e1"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/82.jpg",
+          "sha256": "8d20c344bac1b4e9848a0b6a5e923d69c8bc81bdea4e45b40bc0d279834091f6"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-upper-2024/83.jpg",
+          "sha256": "47f940d1c362e44c2a67ec67081e9b95a681aae7d3e7ff8266195d1f9aa87f06"
+        }
+      ]
+    },
+    {
+      "id": "bnu-grade4-lower-2024",
+      "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=4beaad211ff64da0b5644abe111d0e78&type=SYN&contributeId=6fd88d0b3fc7493b9a2b4f2235f52032&tp=Ebook",
+      "evidenceFiles": [
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/cover.jpg",
+          "sha256": "6e5b8bfa4cc3ba7af69649eeba9888623d677b81da487e154f2b719121bab220"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/1.jpg",
+          "sha256": "51b61b4281816006f139f11ca1a9bd28960f263a24320b34275bd5020a570166"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/2.jpg",
+          "sha256": "725e3c97660df05f919ec0dceda79ef9f8d4a44b36ec61cfa2c0b703eeac26c2"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/80.jpg",
+          "sha256": "9bed2e13e43e555385b30df50599698fcb6b312bd938fb217554bb4341774884"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/81.jpg",
+          "sha256": "7479ea9a8d467835bd2fcc7db527934d3944c7859d0f50ac55e3f33bb37b3653"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/82.jpg",
+          "sha256": "1b4465f430fad795cf27f526925b18b6a3b83e476678b43c0b670f406d83fb74"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade4-lower-2024/83.jpg",
+          "sha256": "6d55e6036d8c44d5b309f535725f5ce37e7292d27927aab01e4117cd7fc6eb09"
+        }
+      ]
+    },
+    {
+      "id": "bnu-grade5-upper-2024",
+      "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=841de7443f1d44e6877ece880089dbcf&type=SYN&contributeId=6ab43e71f12f4bd38bba0495498497cb&tp=Ebook",
+      "evidenceFiles": [
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/cover.jpg",
+          "sha256": "b50bd7749fba77b57bd7fe50b56d767a6550dc2e553c6310edcf2ad55d0dc66c"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/1.jpg",
+          "sha256": "b44cd89d4ab8680fa9d4c337069632ab5b1dd26d91b706fff7dd3f495d008a09"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/2.jpg",
+          "sha256": "4488949cb6a087462a0b72dafef3b0295c952733cc4de5cd55333458c6ee94df"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/80.jpg",
+          "sha256": "67db19d801cffbd62a7692087829712da1027f4cb1684a3572a29879463bff26"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/81.jpg",
+          "sha256": "474b1008be83d926896161b784a189f2d756bf45b99fd4f5f485c5a3118b79a7"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/82.jpg",
+          "sha256": "6446db440469655ce936029c67f57e51b221568328550aaf3e7125062a5648aa"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade5-upper-2024/83.jpg",
+          "sha256": "95f19b4261b16d3deeef3b1a5f177ec2e01dc76dcedced2f75e251853c45ad41"
+        }
+      ]
+    },
+    {
+      "id": "bnu-grade6-upper-2024",
+      "source": "https://www.100875.com.cn/show/resourceDetail_eBookAndTeacher.html?resId=7d62ac6149654446a34d3bc252991e40&type=SYN&contributeId=4c88b6b05344488a9e3c015320cf52f2&tp=Ebook",
+      "evidenceFiles": [
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/cover.jpg",
+          "sha256": "89bc867712f25d8f4e2a5e91b8beb78cdcc07bd2fda530fe49546cd7e10edbef"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/1.jpg",
+          "sha256": "85d2b0bd6958237f1df68d3be87aac0ad9daf7e216dcfe2b6baec4b5dfe4399f"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/2.jpg",
+          "sha256": "f2d5fe3ed3bf29e56033e7acedb8be1c9be30e988c3ce8a980c7020c48f9bf6f"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/80.jpg",
+          "sha256": "644fda96cce812ef0cca64e05e7120db1feb3bddeeb7a2a561b4e47a0fb7a8aa"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/81.jpg",
+          "sha256": "a0b6f356df5537b987720350995718160ae5be5878836d9537ae63461eb3294b"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/82.jpg",
+          "sha256": "0e8e36a23a8eeae51ba3310ffb1d9f5589dfba3245ddf12410dd60b08ed90a30"
+        },
+        {
+          "file": "docs/evidence/primary-2024/bnu-grade6-upper-2024/83.jpg",
+          "sha256": "949b5452cc2b3368c8bd3c676346d02501c63bb69273e48e4b8776545f04d2a1"
+        }
+      ]
+    }
+  ]
+}
