@@ -17,7 +17,7 @@ public/data/*-source.docx
 docs/superpowers/
 docs/implementation-progress.md
 
-data/
+/data/
 server-dist/
 *.sqlite*
 *.db

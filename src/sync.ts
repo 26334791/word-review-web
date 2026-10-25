@@ -59,9 +59,9 @@ export class ArchiveSync {
   now() {
     return new Date(Date.now() + this.offset)
   }
-  accept(result: { state: State; serverNow: string }) {
+  accept(result: { state: State; serverNow?: string }) {
     if (result.state.revision >= this.state.revision) this.state = result.state
-    this.offset = Date.parse(result.serverNow) - Date.now()
+    if (result.serverNow) this.offset = Date.parse(result.serverNow) - Date.now()
   }
   remember() {
     try {
@@ -90,7 +90,7 @@ export class ArchiveSync {
       return result
     } catch (error) {
       if (error instanceof ApiFailure && error.status < 500) {
-        if (error.state) this.state = error.state
+        if (error.state) this.accept({ state: error.state })
         this.pending = null
         this.remember()
       }

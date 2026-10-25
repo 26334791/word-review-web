@@ -70,8 +70,8 @@ npm run package
 
 首次打包下载已锁定的官方 Node.js 并验证 SHA256，之后复用缓存。产物位于 `releases/`，不进入 Git：
 
-- `word-review-web-0.2.0-windows-x64.zip`：首次运行 `start-windows.cmd --init-admin`，以后双击启动。
-- `word-review-web-0.2.0-linux-x64.zip`：首次运行 `sh ./start-linux.sh --init-admin`，以后运行 `sh ./start-linux.sh`。
+- `word-review-web-0.2.1-windows-x64.zip`：首次运行 `start-windows.cmd --init-admin`，以后双击启动。
+- `word-review-web-0.2.1-linux-x64.zip`：首次运行 `sh ./start-linux.sh --init-admin`，以后运行 `sh ./start-linux.sh`。
 
 两者内置 Node.js、独立服务端产物和 SQLite，无需安装 npm 依赖；支持 `--no-browser`、`--port`、`--host`、`--data-dir`。空白包不含账号和数据库，附第三方许可及运行环境来源。系统条件和升级见[便携版说明](docs/portable.md)，同步协议见[局域网多用户说明](docs/lan-accounts.md)。
 
