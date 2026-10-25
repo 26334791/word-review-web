@@ -16,3 +16,8 @@ docs/evidence/**/*.jpg
 public/data/*-source.docx
 docs/superpowers/
 docs/implementation-progress.md
+
+data/
+server-dist/
+*.sqlite*
+*.db

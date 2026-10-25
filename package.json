@@ -2,24 +2,27 @@
   "name": "word-review-web",
   "private": true,
   "license": "0BSD",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "engines": {
     "node": ">=24"
   },
   "scripts": {
-    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
-    "build": "npm run prepare:notices && tsc --noEmit && vite build",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "build": "npm run prepare:notices && tsc --noEmit && vite build && node scripts/build-server.mjs",
     "prepare:notices": "node scripts/prepare-notices.mjs",
-    "format": "prettier --write src scripts tests public/sw.js public/manifest.webmanifest *.json *.md index.html docs/*.md .github/**/*.yml",
-    "format:check": "prettier --check src scripts tests public/sw.js public/manifest.webmanifest *.json *.md index.html docs/*.md .github/**/*.yml",
-    "preview": "vite preview --host 127.0.0.1 --port 5173 --strictPort",
+    "format": "prettier --write src server scripts tests public/sw.js public/manifest.webmanifest *.json *.md index.html docs/*.md .github/**/*.yml",
+    "format:check": "prettier --check src server scripts tests public/sw.js public/manifest.webmanifest *.json *.md index.html docs/*.md .github/**/*.yml",
+    "preview": "node scripts/serve.mjs",
     "package": "powershell.exe -NoProfile -File scripts/package.ps1",
     "test:package": "node --test tests/portable-server.test.mjs",
     "test": "node --test tests/*.test.ts tests/*.test.mjs",
-    "test:ui": "node tests/ui-smoke.mjs",
-    "test:pwa": "node tests/pwa-smoke.mjs",
-    "prepare:sample": "node scripts/prepare-sample.mjs"
+    "test:ui": "node tests/lan-smoke.mjs",
+    "test:pwa": "node tests/offline-upgrade.mjs",
+    "test:upgrade": "node tests/offline-upgrade.mjs",
+    "prepare:sample": "node scripts/prepare-sample.mjs",
+    "start": "node scripts/serve.mjs",
+    "test:lan": "node tests/lan-smoke.mjs"
   },
   "dependencies": {
     "papaparse": "5.7.0",

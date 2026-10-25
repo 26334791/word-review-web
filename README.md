@@ -8,25 +8,34 @@
 - 听读新词、看词回忆、听音回忆；两种回忆方向分别保存 FSRS 调度状态。
 - 根据真实时间和四档反馈安排复习，到期优先，支持每日新词额度和单元筛选。
 - 多版本教材独立管理，重复导入保留已有复习进度。
-- JSON 备份与恢复、基础 PWA 和离线学习；发音使用系统英语 TTS 或自备音频。
+- 管理员创建账号，各账号的词库、进度和设置独立；同账号跨设备同步。
+- JSON 备份与恢复；发音使用系统英语 TTS 或自备音频，断网暂停评分。
 
 ## 快速开始
 
-开发环境需要 Node.js 24+。
+源码运行需要 Node.js 24+。一台主机提供服务，其他电脑、手机访问同一局域网地址。
 
 ```sh
 npm ci
-npm run dev
+npm run build
+# 首次在本机终端交互创建管理员，无默认密码
+npm start -- --init-admin
+npm start
 ```
 
-打开 <http://127.0.0.1:5173/>。Windows 也可双击 `启动网页版.cmd`，自动构建、启动生产预览并打开浏览器；附加 `--no-browser` 跳过打开浏览器。
+控制台显示本机和局域网地址，例如 `http://192.168.1.12:5173/`。默认监听 `0.0.0.0:5173`；未创建管理员时拒绝监听。管理员在“我的账号”创建学习账号，新账号首次登录必须修改密码。
 
 ```sh
-npm run build
-npm run preview
+npm start -- --no-browser
+# 限制仅本机访问，或指定端口和持久化目录
+npm start -- --host 127.0.0.1 --port 5174 --data-dir ./data
 ```
 
-浏览器、主机、网址和端口各自保存独立学习档案。请固定使用同一地址，迁移前在“设置与备份”导出完整 JSON，到新设备恢复。恢复会替换目标浏览器的现有档案。
+HTTP 无传输加密，仅适用于可信局域网，不用于公网。按需仅向可信局域网放行主机防火墙 5173/TCP。
+
+Windows 源码启动器首次运行 `启动网页版.cmd --init-admin`，以后双击启动；自动构建并打开浏览器，`--no-browser` 跳过。`npm run dev` 同样构建后启动完整服务，修改代码后重新构建、重启。
+
+档案保存在主机 `data/word-review.sqlite`。升级前停止服务并备份整个 `data/`，覆盖程序时保留此目录。原浏览器 IndexedDB 保留，同网址登录空账号后可选择“迁入当前账号”；跨网址使用原 JSON 备份。恢复仅替换当前账号，其他账号不受影响。
 
 ## 教材词库
 
@@ -61,12 +70,12 @@ npm run package
 
 首次打包下载已锁定的官方 Node.js 并验证 SHA256，之后复用缓存。产物位于 `releases/`，不进入 Git：
 
-- `word-review-web-0.1.0-windows-x64.zip`：解压后双击 `start-windows.cmd`。
-- `word-review-web-0.1.0-linux-x64.zip`：解压后执行 `sh ./start-linux.sh`。
+- `word-review-web-0.2.0-windows-x64.zip`：首次运行 `start-windows.cmd --init-admin`，以后双击启动。
+- `word-review-web-0.2.0-linux-x64.zip`：首次运行 `sh ./start-linux.sh --init-admin`，以后运行 `sh ./start-linux.sh`。
 
-两者内置 Node.js，无需安装环境，支持 `--no-browser`、`--port 5174`，只监听本机 `127.0.0.1`。包内附第三方许可和运行环境来源。系统条件、发音和数据迁移见[便携版说明](docs/portable.md)。
+两者内置 Node.js、独立服务端产物和 SQLite，无需安装 npm 依赖；支持 `--no-browser`、`--port`、`--host`、`--data-dir`。空白包不含账号和数据库，附第三方许可及运行环境来源。系统条件和升级见[便携版说明](docs/portable.md)，同步协议见[局域网多用户说明](docs/lan-accounts.md)。
 
-Windows 包已通过解压、排除系统 Node 后启动和离线学习验证。Linux 服务在 WSL1 下通过系统动态加载器验证，标准启动流程尚待符合官方系统条件的 Linux 主机验收。
+Windows 与 Linux 包的验收结果随版本记录；WSL1 不符合随包 Node 的官方平台条件，不能用其动态加载器检查代替标准 Linux 启动验收。
 
 ## 开发与检查
 
@@ -76,13 +85,14 @@ npm run build
 npm test
 ```
 
-`npm run format` 使用 Prettier 统一格式。构建前自动生成依赖许可声明，再进行类型检查和生产构建。GitHub Actions 在 Windows 和 Linux 上执行格式、构建和领域/静态服务检查。
+`npm run format` 使用 Prettier 统一格式。构建前自动生成依赖许可声明，再检查类型并构建浏览器和服务端。GitHub Actions 在 Windows 和 Linux 上执行格式、构建、领域及账号 API 检查。
 
 浏览器验证另需 Playwright 和 Chromium。可使用已有安装并设置 `PLAYWRIGHT_MODULE_DIR`（node_modules 目录）及 `PLAYWRIGHT_EXECUTABLE`，也可另行安装 Playwright 和浏览器。
 
-- 保持开发服务器运行时执行 `npm run test:ui`。
-- 保持生产预览运行时执行 `npm run test:pwa`，检查离线壳、全部词库导入和复习闭环。
-- `TEST_BASE_URL` 指定测试地址，默认 `http://127.0.0.1:5173`。
+- `npm run test:lan` 自动启动临时服务，验证真实 LAN HTTP、两账号和双设备、全部教材、评分、响应丢失、断网、迁移与备份。
+- `TEST_LAN_HOST` 可指定本机实际局域网 IPv4；自动选择网卡不合适时设置该值，拒绝用 localhost 代替 LAN 验收。
+- `npm run test:upgrade` 验证旧 Service Worker 注销、仅清理本应用缓存、保留旧 IndexedDB。
+- `test:ui` 为 LAN 回归入口；`test:pwa` 保留为旧离线壳升级测试别名。
 
 浏览器测试使用独立档案，不修改日常学习记录；截图和报告写入被 Git 忽略的 `artifacts/`。
 
@@ -103,10 +113,12 @@ npm test
 ## 项目结构
 
 ```text
-src/                 导入、调度、语音、IndexedDB 和网页界面
+src/                 导入、调度、语音、同步、旧档案读取和网页界面
+server/              SQLite、账号、会话和命令 API
+data/                运行时档案，不进入 Git 或便携包
 public/data/         词表、目录与来源元数据
 scripts/             词库重建、许可生成、本地服务和便携打包
-tests/               领域、浏览器、离线和静态服务检查
+tests/               领域、账号、LAN 浏览器、旧版升级和静态服务检查
 docs/                PRD、教材核验和来源许可说明
 ```
 

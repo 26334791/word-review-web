@@ -2,6 +2,7 @@ import { fsrs, createEmptyCard } from 'ts-fsrs'
 import type { Card, Grade } from 'ts-fsrs'
 import type { State, Direction, Word, ReviewCard, StoredCard } from './model.ts'
 import { safeAudio } from './imports.ts'
+import { uuid } from './id.ts'
 export interface Task {
   key: string
   word: Word
@@ -117,7 +118,7 @@ export function rate(
     schedule: JSON.parse(JSON.stringify(result.card)),
   }
   const log = {
-    id: crypto.randomUUID(),
+    id: uuid(),
     cardId: task.key,
     wordId: word.id,
     at: now.toISOString(),

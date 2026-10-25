@@ -1,4 +1,5 @@
 import Papa from 'papaparse'
+import { uuid } from './id.ts'
 import type { Book, State, Word } from './model.ts'
 export type Grid = string[][]
 export type Field = 'en' | 'zh' | 'pos' | 'phonetic' | 'unit' | 'audio' | 'sourceId' | 'example'
@@ -114,7 +115,7 @@ export function importBook(state: State, book: Book, rows: ImportRow[]): State {
       next.undoableLogId = null
     }
     if (!target) {
-      const id = crypto.randomUUID()
+      const id = uuid()
       target = {
         id,
         bookId: book.id,

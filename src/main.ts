@@ -11,12 +11,22 @@ import {
   exportBook,
 } from './imports.ts'
 import type { Grid, Field } from './imports.ts'
-import { nextTask, stats, rate, undo, restoreBackup, dayKey } from './review.ts'
+import { nextTask, stats, restoreBackup, dayKey } from './review.ts'
 import type { Task } from './review.ts'
-import { loadState, updateState } from './db.ts'
+import { loadState } from './db.ts'
+import { api, ApiFailure, ArchiveSync } from './sync.ts'
+import type { Account } from './sync.ts'
 import { englishVoices, selectedVoice, speak, stopSpeech } from './speech.ts'
 
 const root = document.querySelector<HTMLDivElement>('#app')!
+let user: Account | null = null,
+  sync: ArchiveSync | null = null
+let accountVersion = 0
+let legacy: State | null = null,
+  users: Account[] = [],
+  connected = false,
+  refreshing = false
+const now = () => sync?.now() ?? new Date()
 let state = initialState(),
   busy = false,
   message = '',
@@ -58,7 +68,6 @@ interface CatalogEntry extends Omit<Book, 'paused'> {
 }
 let catalog: CatalogEntry[] = []
 let restoreCandidate: State | null = null
-const channel = 'BroadcastChannel' in window ? new BroadcastChannel('word-review-updates') : null
 const labels: Record<Field, string> = {
   en: '英文',
   zh: '释义',
@@ -77,11 +86,11 @@ const esc = (value: unknown) =>
 const icon = (name: string) =>
   `<span class="icon" aria-hidden="true">${({ home: '◷', library: '▤', import: '↥', settings: '⚙' } as Record<string, string>)[name] ?? name}</span>`
 const route = () =>
-  ['today', 'study', 'library', 'import', 'settings'].includes(location.hash.slice(1))
+  ['today', 'study', 'library', 'import', 'settings', 'account'].includes(location.hash.slice(1))
     ? location.hash.slice(1)
     : 'today'
 const btn = (action: string, text: string, cls = 'primary', disabled = false) =>
-  `<button class="${cls}" data-action="${action}" ${disabled || busy ? 'disabled' : ''}>${text}</button>`
+  `<button class="${cls}" data-action="${action}" ${disabled || busy || ((!connected || sync?.pending) && !['reconnect', 'logout', 'dismiss', 'backup'].includes(action)) ? 'disabled' : ''}>${text}</button>`
 const option = (value: string | number, text: string, selected: string | number) =>
   `<option value="${esc(value)}" ${String(value) === String(selected) ? 'selected' : ''}>${esc(text)}</option>`
 function toast(text: string, error = false) {
@@ -97,16 +106,24 @@ function download(name: string, content: string, type = 'application/json') {
   Object.assign(document.createElement('a'), { href: url, download: name }).click()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
-async function change(mutate: (latest: State) => State): Promise<boolean> {
-  if (busy) return false
+async function change(type: string, payload: unknown): Promise<boolean> {
+  if (busy || !sync || !connected) return false
   busy = true
   root.querySelectorAll<HTMLButtonElement>('button').forEach((button) => (button.disabled = true))
   try {
-    state = await updateState(state.revision, mutate)
-    channel?.postMessage(state.revision)
+    await sync.send(type, payload)
+    state = sync.state
     return true
   } catch (error) {
-    toast(error instanceof Error ? error.message : '保存失败，请重试。', true)
+    if (sync.pending) {
+      connected = false
+      toast('保存结果尚未确认，当前题目已保留。请重新连接后确认，勿重复评分。', true)
+    } else {
+      state = sync.state
+      if (error instanceof ApiFailure && error.status === 409) setTask()
+      if (error instanceof ApiFailure && error.status === 401) resetAccount()
+      toast(error instanceof Error ? error.message : '保存失败，请重试。', true)
+    }
     return false
   } finally {
     busy = false
@@ -120,7 +137,7 @@ function clearPlayback() {
 }
 function setTask() {
   clearPlayback()
-  task = nextTask(state, new Date(), blocked)
+  task = nextTask(state, now(), blocked)
   phase = task?.kind === 'new' ? 'teaching' : 'question'
 }
 function dateText(value: string) {
@@ -142,17 +159,17 @@ function catalogView() {
     <div class="catalog-grid">${catalog.map((entry) => `<article class="catalog-book"><h3>${esc(entry.title)}</h3><p class="muted small">${esc(entry.edition)} · ${entry.rows} 个词条</p><p class="small">版次：待版权页核验<br>单元：${entry.verification.units === 'checked' ? '已对照课本' : '待核验'} · 释义：${entry.verification.meanings === 'checked' ? '已对照课本' : '候选词典释义'}</p><p class="muted small">${esc(entry.contentNote)}</p><button class="secondary" data-action="catalog-${esc(entry.id)}" ${busy ? 'disabled' : ''}>预览并导入</button> <a class="text-link small" href="${esc(entry.file)}" download>下载 CSV</a></article>`).join('')}</div>${catalog.length ? '' : '<p>目录暂时无法读取，请联网刷新；已导入的学习档案仍可使用。</p>'}</section>`
 }
 async function loadCatalog(id: string) {
+  const version = accountVersion
   const entry = catalog.find((b) => b.id === id)
   if (!entry) throw new Error('分册目录暂时不可用，请刷新重试。')
   clearPlayback()
-  const response = await fetch(entry.file)
-  if (!response.ok) throw new Error('词表读取失败，请联网重试。')
-  const bytes = await response.arrayBuffer()
-  const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), (b) =>
-    b.toString(16).padStart(2, '0'),
-  ).join('')
-  if (digest !== entry.sha256) throw new Error('词表与目录版本不一致，请联网刷新后重试。')
-  await openFile(new Blob([bytes]), entry.title + '.csv')
+  const { csv } = await api('catalog/' + entry.id, undefined, user!.id)
+  if (
+    version !== accountVersion ||
+    !(await openFile(new Blob([csv]), entry.title + '.csv')) ||
+    version !== accountVersion
+  )
+    return
   const { title, publisher, grade, semester, startGrade, edition, source, contentNote } = entry
   draftBook = {
     id: '',
@@ -171,30 +188,39 @@ async function loadCatalog(id: string) {
 }
 
 function render() {
+  const pastePanel = root.querySelector<HTMLDetailsElement>('#paste-panel')
+  if (user && pastePanel) pasteOpen = pastePanel.open
+  if (!user || user.mustChange) {
+    renderLogin()
+    return
+  }
   const current = route(),
-    summary = stats(state, new Date())
+    summary = stats(state, now())
   root.innerHTML = `<div class="layout"><aside class="sidebar"><a class="brand" href="#today"><img src="/icon.svg" alt=""><div>单词日课<small>让每一次回忆都有收获</small></div></a>
     <div class="nav-label">我的学习</div><nav aria-label="主导航">${[
       ['today', 'home', '今日学习'],
       ['library', 'library', '教材词库'],
       ['import', 'import', '导入词表'],
       ['settings', 'settings', '设置与备份'],
+      ['account', 'settings', '我的账号'],
     ]
       .map(
         ([link, glyph, label]) =>
           `<a href="#${link}" class="${current === link || (link === 'today' && current === 'study') ? 'active' : ''}">${icon(glyph)}${label}</a>`,
       )
       .join('')}</nav>
-    <div class="sidebar-bottom"><span class="local-dot"></span> 学习记录保存在这台设备<small>记得定期导出备份</small></div></aside>
-    <main><header class="topbar"><span>一步一步，记得更牢。</span><span>${dayKey(new Date())} <i>本机学习档案</i></span></header>
+    <div class="sidebar-bottom"><span class="local-dot"></span> ${connected ? '档案已连接到局域网主机' : '连接中断，暂停保存'}<small>${esc(user.username)} · 版本 ${state.revision}</small></div></aside>
+    <main><header class="topbar"><span>一步一步，记得更牢。</span><span>${dayKey(now())} <a href="#account">${esc(user.username)}</a></span></header>
     ${message ? `<div role="status" class="notice ${isError ? 'error' : 'success'}">${esc(message)}<button data-action="dismiss" aria-label="关闭提示">×</button></div>` : ''}
-    ${current === 'today' ? todayView(summary) : current === 'study' ? studyView() : current === 'library' ? libraryView() : current === 'import' ? importView() : settingsView()}
+    ${!connected || sync?.pending ? `<div class="notice error" role="alert">连接中断或保存结果尚未确认，已暂停后续评分。${btn('reconnect', '重新连接并确认', 'secondary')}</div>` : ''}
+    ${legacy && state.revision === 0 ? `<section class="panel"><h2>检测到此浏览器的旧档案</h2><p>${legacy.books.length} 本教材 · ${legacy.words.length} 个词条。将迁入账号 <b>${esc(user.username)}</b>，原浏览器档案会保留。</p><label class="check"><input id="migration-confirm" type="checkbox">确认迁入当前账号</label>${btn('migrate', '迁入当前账号', 'secondary')}</section>` : ''}
+    ${current === 'today' ? todayView(summary) : current === 'study' ? studyView() : current === 'library' ? libraryView() : current === 'import' ? importView() : current === 'account' ? accountView() : settingsView()}
     <footer>专注听读与回忆 · 复习安排随你的记忆反馈调整</footer></main></div>`
 }
 function todayView(summary: ReturnType<typeof stats>) {
   const book = state.books.find((b) => b.id === state.settings.bookId)
   const activeCount = state.words.filter((w) => !w.archived).length,
-    next = nextTask(state, new Date(), blocked)
+    next = nextTask(state, now(), blocked)
   return `<section class="page-title"><div><p class="eyebrow">TODAY / 今日学习</p><h1>今天，也记住一点新东西。</h1><p class="muted">先温习，再出发。每天的进步，都从一次认真回忆开始。</p></div><a class="text-link" href="#settings">调整学习计划 ↗</a></section>
     <div class="metrics"><article><span>到期复习 <small>张卡片</small></span><strong data-testid="due-count">${summary.due}</strong><p>看词与听音，分别记忆</p></article><article><span>今日新词 <small>个单词</small></span><strong data-testid="new-count">${summary.newToday}<em> / ${state.settings.dailyNew}</em></strong><p>按教材顺序，稳稳向前</p></article><article><span>累计已学 <small>个单词</small></span><strong data-testid="learned-count">${summary.learned}<em> / ${activeCount}</em></strong><p>每一次回忆，都留有记录</p></article></div>
     <div class="home-grid"><section class="panel daily"><div class="panel-heading"><h2>今天的学习</h2><span class="tag green">先复习 · 再学新词</span></div>${
@@ -216,7 +242,7 @@ function unitSelect(bookId: string) {
 }
 function studyView() {
   if (!task) {
-    const summary = stats(state, new Date())
+    const summary = stats(state, now())
     return `<section class="page-title"><div><p class="eyebrow">YOUR PACE</p><h1>这一段，学得不错。</h1><p class="muted">本次已完成 ${sessionCount} 次回忆评分。</p></div></section><section class="panel centered"><div class="done-mark">✓</div><h2>当前没有可练的新任务</h2><p>${summary.pending || summary.due ? `还有 ${summary.due} 张到期卡和 ${summary.pending} 张首练。暂不可练的听音卡可以重试。` : '给记忆一点时间，下次到期再来复习。'}</p>${summary.nextDue ? `<p>下次复习：${dateText(summary.nextDue)}</p>` : ''}<div class="actions">${btn('undo', '撤销上次评分', 'secondary', !state.undoableLogId)}${btn('retry-tasks', '重新检查任务', 'secondary')}<a class="button primary" href="#today">回到今日学习</a></div></section>`
   }
   const teaching = phase === 'teaching',
@@ -244,7 +270,7 @@ function studyView() {
               ]
                 .map(
                   ([n, label, hint]) =>
-                    `<button data-action="rate-${n}" class="rating rating-${n}"><b>${label}</b><span>${hint}</span><small>按 ${n}</small></button>`,
+                    `<button data-action="rate-${n}" class="rating rating-${n}" ${busy || !connected || sync?.pending ? 'disabled' : ''}><b>${label}</b><span>${hint}</span><small>按 ${n}</small></button>`,
                 )
                 .join('')}</div>`
       }
@@ -309,7 +335,7 @@ function importView() {
   } catch (error) {
     importError = (error as Error).message
   }
-  return `<section class="page-title"><div><p class="eyebrow">BUILD YOUR LIBRARY / 导入词表</p><h1>把熟悉的教材，带进来。</h1><p class="muted">选来源，检查字段，确认后才会保存到本机。</p></div></section>
+  return `<section class="page-title"><div><p class="eyebrow">BUILD YOUR LIBRARY / 导入词表</p><h1>把熟悉的教材，带进来。</h1><p class="muted">选来源，检查字段，确认后才会保存到当前账号。</p></div></section>
     <div class="steps"><span class="${!grid ? 'current' : ''}"><b>1</b> 选择来源</span><i>—</i><span class="${grid ? 'current' : ''}"><b>2</b> 字段与预览</span><i>—</i><span><b>3</b> 确认入库</span></div>
     ${importResult ? `<div class="notice success">${esc(importResult)} <a href="#today">去学习 →</a></div>` : ''}
     <section class="panel"><div class="panel-heading"><h2>教材信息</h2><span class="tag amber">新词表默认待核对</span></div><div class="form-grid">
@@ -349,7 +375,7 @@ function importView() {
           '',
         )}</tbody></table></div><p class="footnote">预览前 6 个有效词条，导入统计基于全部数据。未提供单元时整册学习，不自动编造单元。</p>
       ${summary && (summary.existing || summary.archived) ? `<label class="check"><input id="confirm-merge" type="checkbox" ${mergeConfirmed ? 'checked' : ''}>确认合并重复项并更新辅助信息；实质内容变化会归档旧词、重新学习。</label>` : ''}
-      <div class="import-confirm"><p>教材：<b>${esc(book.title)}</b><br><span class="muted small">${esc(book.edition)} · 词表会保存在本机</span></p>${btn('commit-import', `确认导入 ${preview.valid.length} 个有效词条`, 'primary', !summary || !!importError || (!!preview.errors.length && !skipErrors) || (!!summary && !!(summary.existing || summary.archived) && !mergeConfirmed))}</div></section>`
+      <div class="import-confirm"><p>教材：<b>${esc(book.title)}</b><br><span class="muted small">${esc(book.edition)} · 词表会保存在当前账号</span></p>${btn('commit-import', `确认导入 ${preview.valid.length} 个有效词条`, 'primary', !summary || !!importError || (!!preview.errors.length && !skipErrors) || (!!summary && !!(summary.existing || summary.archived) && !mergeConfirmed))}</div></section>`
         : ''
     }`
 }
@@ -358,20 +384,26 @@ function settingsView() {
     chosen = selectedVoice(state.settings)
   return `<section class="page-title"><div><p class="eyebrow">YOUR PREFERENCES / 设置与备份</p><h1>找到适合自己的节奏。</h1><p class="muted">一次设置，每天轻松开始。</p></div></section><div class="settings-grid"><section class="panel"><h2>学习计划</h2><label class="setting-label" for="daily-new">每天的新词数量</label><div class="quantity"><input id="daily-new" type="number" min="0" max="100" value="${state.settings.dailyNew}"><span>个 / 天</span></div><p class="muted small">0 表示暂时只复习。已学词的听音首练仍会保留。</p><div class="quiet-info">系统根据每次回忆反馈安排下次复习。忘记时如实选择“忘记”，让复习安排更适合你。</div><p class="footnote">学习日：北京时间，每天 00:00 更新今日计数。</p></section>
     <section class="panel"><h2>英语发音</h2><label class="setting-label" for="voice-select">示范音色</label><select id="voice-select">${option('', '自动选择（优先英音）', state.settings.voiceURI)}${voices.map((v) => option(v.voiceURI, `${v.name} · ${v.lang} · ${v.localService ? '本地' : '联网'}`, state.settings.voiceURI)).join('')}</select><label class="setting-label" for="speed-select">播放语速</label><select id="speed-select">${[0.75, 1, 1.25].map((n) => option(n, `${n}× ${n === 1 ? '正常' : n < 1 ? '慢速' : '快速'}`, state.settings.speed)).join('')}</select><div class="voice-status ${chosen ? 'available' : ''}">${chosen ? `● 已检测到 ${esc(chosen.lang)} 音色，${chosen.localService ? '由设备本地提供' : '需要联网'}` : '尚未检测到英语音色。可以刷新音色，或在 Windows 语言设置中添加英语语音。'}</div><div class="actions">${btn('test-voice', '试听发音', 'secondary')}${btn('refresh-voices', '刷新音色', 'text-button')}</div></section></div>
-    <section class="panel"><div class="panel-heading"><div><h2>备份你的学习记录</h2><p class="muted small">词库、复习安排和历史记录，一起保存。</p></div>${btn('backup', '导出完整备份', 'primary')}</div><div class="backup-info"><p>本机档案仅属于当前浏览器和当前网址。清除网站数据、更换浏览器或网址前，请先导出备份。</p><label class="button secondary" for="backup-file">选择备份恢复<input id="backup-file" type="file" accept=".json" class="file-input"></label></div>
-      ${restoreCandidate ? `<div class="restore-preview"><h3>检查待恢复的档案</h3><p>${restoreCandidate.books.length} 本教材 · ${restoreCandidate.words.filter((w) => !w.archived).length} 个有效词条 · ${restoreCandidate.logs.filter((l) => !l.undoneAt).length} 条评分记录</p><p class="danger">恢复将替换当前本机档案。请先导出当前备份。</p><label class="check"><input id="restore-confirm" type="checkbox">我已保存当前备份，确认替换本机档案</label>${btn('restore', '确认整库恢复', 'secondary')}${btn('cancel-restore', '取消', 'text-button')}</div>` : ''}<p class="footnote">音频备份保存来源链接，不包含远程音频文件。恢复后需要重新联网缓存或使用本地语音。</p></section>`
+    <section class="panel"><div class="panel-heading"><div><h2>备份你的学习记录</h2><p class="muted small">词库、复习安排和历史记录，一起保存。</p></div>${btn('backup', '导出完整备份', 'primary')}</div><div class="backup-info"><p>档案保存在局域网主机，使用同一账号可在不同设备接续学习。请定期导出个人备份，主机升级时保留 data 目录。</p><label class="button secondary" for="backup-file">选择备份恢复<input id="backup-file" type="file" accept=".json" class="file-input"></label></div>
+      ${restoreCandidate ? `<div class="restore-preview"><h3>检查待恢复的档案</h3><p>${restoreCandidate.books.length} 本教材 · ${restoreCandidate.words.filter((w) => !w.archived).length} 个有效词条 · ${restoreCandidate.logs.filter((l) => !l.undoneAt).length} 条评分记录</p><p class="danger">恢复将替换当前账号档案。请先导出当前备份。</p><label class="check"><input id="restore-confirm" type="checkbox">我已保存当前备份，确认替换当前账号档案</label>${btn('restore', '确认整库恢复', 'secondary')}${btn('cancel-restore', '取消', 'text-button')}</div>` : ''}<p class="footnote">音频备份保存来源链接，不包含远程音频文件。恢复后需要联网播放或使用设备语音。</p></section>`
 }
 async function openFile(file: File | Blob, name: string) {
+  const version = accountVersion
   if (file.size > 10 * 1024 * 1024) throw new Error('词表超过 10 MB，请拆分后导入。')
   if (/\.xlsx$/i.test(name)) {
     const parsed = await readXlsxFile(file)
+    if (version !== accountVersion) return false
     sheets = parsed
       .filter((s) => s.data.length)
       .map((s) => ({
         name: s.sheet,
         grid: s.data.map((row) => row.map((cell) => String(cell ?? ''))),
       }))
-  } else sheets = [{ name: name, grid: parseText(await file.text()) }]
+  } else {
+    const text = await file.text()
+    if (version !== accountVersion) return false
+    sheets = [{ name, grid: parseText(text) }]
+  }
   if (!sheets.length || sheets[0].grid.length < 2)
     throw new Error('词表为空，请保留表头和至少一行词条。')
   sheetIndex = 0
@@ -380,6 +412,7 @@ async function openFile(file: File | Blob, name: string) {
   skipErrors = false
   mergeConfirmed = false
   importResult = ''
+  return true
 }
 async function playTask() {
   if (!task || playing) return
@@ -402,19 +435,165 @@ async function playTask() {
     }
   }
 }
+function resetAccount() {
+  accountVersion++
+  clearPlayback()
+  user = null
+  sync = null
+  state = initialState()
+  connected = false
+  task = null
+  sessionCount = 0
+  blocked.clear()
+  users = []
+  sheets = []
+  sheetIndex = 0
+  mapping = guessMapping([])
+  fileName = ''
+  skipErrors = false
+  mergeConfirmed = false
+  importResult = ''
+  query = ''
+  pasteText = ''
+  pasteOpen = false
+  draftBook = { ...sampleBook }
+  restoreCandidate = null
+}
+function passwordForm() {
+  return `<form data-form="password" class="account-form"><label>当前密码<input name="currentPassword" type="password" autocomplete="current-password" required maxlength="256"></label><label>新密码（10–256 个字符）<input name="password" type="password" autocomplete="new-password" minlength="10" maxlength="256" required></label><label>确认新密码<input name="confirmation" type="password" autocomplete="new-password" required></label><button class="primary" type="submit">修改密码并重新登录</button></form>`
+}
+function renderLogin() {
+  root.innerHTML = `<main class="auth-shell"><section class="panel"><img src="/icon.svg" width="48" alt=""><h1>单词日课</h1><p>${user?.mustChange ? `账号 ${esc(user.username)} 首次登录，请修改初始密码。` : '登录自己的账号，接续听读与科学复习。'}</p>${message ? `<p class="notice ${isError ? 'error' : 'success'}" role="alert">${esc(message)}</p>` : ''}${user?.mustChange ? passwordForm() + btn('logout', '退出账号', 'secondary') : `<form data-form="login" class="account-form"><label>账号<input name="username" autocomplete="username" required maxlength="40"></label><label>密码<input name="password" type="password" autocomplete="current-password" required maxlength="256"></label><button class="primary" type="submit">登录</button></form><p class="muted small">请向管理员领取账号。本服务仅用于可信局域网。</p>`}</section></main>`
+}
+function accountView() {
+  return `<section class="page-title"><div><h1>我的账号</h1><p>${esc(user!.username)}${user!.admin ? ' · 管理员' : ''}</p></div>${btn('logout', '退出账号', 'secondary')}</section><section class="panel"><h2>修改密码</h2>${passwordForm()}</section>${user!.admin ? `<section class="panel"><div class="panel-heading"><h2>账号管理</h2>${btn('refresh-users', '刷新账号', 'secondary')}</div><p class="muted">新账号首次登录须改密。重置密码或停用账号会使原会话失效。</p><form data-form="create-user" class="account-form"><label>新账号<input name="username" required maxlength="40"></label><label>初始密码<input name="password" type="password" minlength="10" maxlength="256" required autocomplete="new-password"></label><label class="check"><input name="admin" type="checkbox">管理员</label><button class="primary" type="submit">创建账号</button></form><div class="account-list">${users.map((u) => `<article><h3>${esc(u.username)} · ${u.admin ? '管理员' : '学习账号'} · ${u.enabled ? '启用' : '停用'}</h3><button class="secondary" data-action="toggle-user" data-id="${esc(u.id)}" data-enabled="${!u.enabled}">${u.enabled ? '停用账号' : '启用账号'}</button><form data-form="reset-password" data-id="${esc(u.id)}" class="account-form"><label>新初始密码<input name="password" type="password" required minlength="10" maxlength="256" autocomplete="new-password"></label><button class="secondary" type="submit">重置密码</button></form></article>`).join('')}</div></section>` : ''}`
+}
+async function refreshUsers() {
+  const version = accountVersion
+  if (user?.admin) {
+    const result = await api('admin/users', undefined, user.id)
+    if (version === accountVersion) users = result.users
+  }
+}
+async function refreshArchive() {
+  if (!user || user.mustChange || !sync || busy || refreshing) return
+  refreshing = true
+  const current = sync,
+    oldRevision = state.revision,
+    pendingType = current.pending?.type
+  try {
+    await current.recover()
+    if (current !== sync) return
+    state = current.state
+    connected = true
+    if (state.revision !== oldRevision || pendingType) {
+      if (pendingType === 'rate') sessionCount++
+      setTask()
+      if (pendingType === 'import' || pendingType === 'restore' || pendingType === 'migrate') {
+        sheets = []
+        restoreCandidate = null
+      }
+      toast(
+        pendingType ? '已确认上次操作结果，档案已同步。' : '另一台设备已更新档案，当前练习已刷新。',
+      )
+    }
+    if (
+      !document.querySelector('form:focus-within') &&
+      (state.revision !== oldRevision ||
+        pendingType ||
+        root.querySelector('[data-action="reconnect"]'))
+    )
+      render()
+  } catch (error) {
+    if (current !== sync) return
+    if (error instanceof ApiFailure && error.status === 401) {
+      resetAccount()
+      toast(error.message, true)
+      render()
+    } else {
+      if (error instanceof ApiFailure && error.state) {
+        state = current.state
+        setTask()
+      }
+      connected = false
+      toast(error instanceof Error ? error.message : '连接失败，暂停评分。', true)
+      render()
+    }
+  } finally {
+    refreshing = false
+  }
+}
+document.addEventListener('submit', async (event) => {
+  const form = event.target as HTMLFormElement
+  if (!form.dataset.form) return
+  event.preventDefault()
+  if (busy) return
+  const data = new FormData(form),
+    kind = form.dataset.form
+  busy = true
+  form.querySelectorAll<HTMLButtonElement>('button').forEach((b) => (b.disabled = true))
+  try {
+    if (kind === 'login') {
+      const result = await api('login', {
+        username: data.get('username'),
+        password: data.get('password'),
+      })
+      resetAccount()
+      user = result.user
+      if (!user!.mustChange) {
+        sync = new ArchiveSync(user!.id)
+        await sync.recover()
+        state = sync.state
+        connected = true
+        await refreshUsers()
+        if (route() === 'study') setTask()
+      }
+      message = ''
+    } else if (kind === 'password') {
+      if (data.get('password') !== data.get('confirmation'))
+        throw new Error('两次输入的新密码不一致。')
+      await api(
+        'password',
+        { currentPassword: data.get('currentPassword'), password: data.get('password') },
+        user!.id,
+      )
+      resetAccount()
+      toast('密码已修改，请使用新密码重新登录。')
+    } else if (kind === 'create-user') {
+      await api(
+        'admin/users',
+        {
+          username: data.get('username'),
+          password: data.get('password'),
+          admin: data.get('admin') === 'on',
+        },
+        user!.id,
+      )
+      await refreshUsers()
+      toast('账号已创建，首次登录须修改密码。')
+    } else if (kind === 'reset-password') {
+      await api('admin/users/' + form.dataset.id, { password: data.get('password') }, user!.id)
+      if (form.dataset.id === user!.id) resetAccount()
+      else await refreshUsers()
+      toast('密码已重置，原会话已失效。')
+    }
+  } catch (error) {
+    toast((error as Error).message, true)
+  } finally {
+    busy = false
+    render()
+  }
+})
+
 document.addEventListener('click', async (event) => {
+  const version = accountVersion
   const button = (event.target as HTMLElement).closest<HTMLElement>(
     '[data-action],[data-book],[data-word-play]',
   )
   if (!button || busy || (button as HTMLButtonElement).disabled) return
   try {
     if (button.dataset.book) {
-      if (
-        await change((s) => ({
-          ...s,
-          settings: { ...s.settings, bookId: button.dataset.book!, unit: 'all' },
-        }))
-      ) {
+      if (await change('settings', { bookId: button.dataset.book!, unit: 'all' })) {
         query = ''
         render()
       }
@@ -428,7 +607,34 @@ document.addEventListener('click', async (event) => {
       return
     }
     const action = button.dataset.action!
-    if (action === 'dismiss') {
+    if (action === 'logout') {
+      await api('logout', {}, user!.id)
+      resetAccount()
+      message = ''
+      render()
+    } else if (action === 'reconnect') await refreshArchive()
+    else if (action === 'refresh-users') {
+      await refreshUsers()
+      render()
+    } else if (action === 'toggle-user') {
+      await api(
+        'admin/users/' + button.dataset.id,
+        { enabled: button.dataset.enabled === 'true' },
+        user!.id,
+      )
+      if (button.dataset.id === user!.id) resetAccount()
+      else await refreshUsers()
+      toast('账号状态已更新。')
+      render()
+    } else if (action === 'migrate' && legacy) {
+      if (!document.querySelector<HTMLInputElement>('#migration-confirm')?.checked)
+        throw new Error('请确认迁入当前账号。')
+      if (await change('migrate', JSON.stringify(legacy))) {
+        toast('旧档案已迁入，原浏览器档案保留。')
+        setTask()
+      }
+      render()
+    } else if (action === 'dismiss') {
       message = ''
       render()
     } else if (action === 'load-sample') await loadCatalog('bnu-grade4-upper')
@@ -459,9 +665,11 @@ document.addEventListener('click', async (event) => {
       const currentTask = task,
         audioWasPlayed = played
       if (
-        await change((s) =>
-          rate(s, currentTask, Number(action.slice(5)), new Date(), audioWasPlayed),
-        )
+        await change('rate', {
+          task: currentTask,
+          grade: Number(action.slice(5)),
+          audioPlayed: audioWasPlayed,
+        })
       ) {
         sessionCount++
         toast('已保存，本次反馈已用于安排后续复习。')
@@ -474,7 +682,7 @@ document.addEventListener('click', async (event) => {
       setTask()
       render()
     } else if (action === 'undo') {
-      if (await change((s) => undo(s, new Date()))) {
+      if (await change('undo', {})) {
         sessionCount = Math.max(0, sessionCount - 1)
         toast('已撤销上一次评分。')
         setTask()
@@ -503,7 +711,7 @@ document.addEventListener('click', async (event) => {
       if (preview.errors.length && !skipErrors) throw new Error('请先处理错误行，或明确选择跳过。')
       if ((summary.existing || summary.archived) && !mergeConfirmed)
         throw new Error('请先确认重复词与内容更新处理。')
-      if (await change((s) => importBook(s, book, preview.valid))) {
+      if (await change('import', { book, rows: preview.valid })) {
         importResult = `导入完成：新增 ${summary.added} 个词条，处理已有或重复 ${summary.existing} 行，归档旧词 ${summary.archived} 个，跳过错误 ${preview.errors.length} 行。`
         sheets = []
         toast(importResult)
@@ -525,11 +733,9 @@ document.addEventListener('click', async (event) => {
       )
     else if (action === 'pause-book') {
       if (
-        await change((s) => {
-          const next = structuredClone(s)
-          const book = next.books.find((b) => b.id === s.settings.bookId)!
-          book.paused = !book.paused
-          return next
+        await change('pause', {
+          bookId: state.settings.bookId,
+          paused: !state.books.find((b) => b.id === state.settings.bookId)!.paused,
         })
       ) {
         toast('教材复习状态已更新，原学习进度保留。')
@@ -552,7 +758,7 @@ document.addEventListener('click', async (event) => {
       if (!document.querySelector<HTMLInputElement>('#restore-confirm')?.checked)
         throw new Error('请先保存当前备份并勾选替换确认。')
       const backup = restoreBackup(JSON.stringify(restoreCandidate))
-      if (await change(() => structuredClone(backup))) {
+      if (await change('restore', JSON.stringify(backup))) {
         restoreCandidate = null
         blocked.clear()
         task = null
@@ -561,11 +767,13 @@ document.addEventListener('click', async (event) => {
       render()
     }
   } catch (error) {
+    if (version !== accountVersion) return
     toast((error as Error).message, true)
     render()
   }
 })
 document.addEventListener('change', async (event) => {
+  const version = accountVersion
   const input = event.target as HTMLInputElement | HTMLSelectElement
   try {
     if (input.id.startsWith('meta-')) {
@@ -615,7 +823,7 @@ document.addEventListener('change', async (event) => {
     if (input.id === 'word-file') {
       const file = (input as HTMLInputElement).files?.[0]
       if (file) {
-        await openFile(file, file.name)
+        if (!(await openFile(file, file.name)) || version !== accountVersion) return
         draftBook.contentNote = undefined
         render()
       }
@@ -625,7 +833,9 @@ document.addEventListener('change', async (event) => {
       const file = (input as HTMLInputElement).files?.[0]
       if (file) {
         if (file.size > 50 * 1024 * 1024) throw new Error('备份超过 50 MB。')
-        restoreCandidate = restoreBackup(await file.text())
+        const text = await file.text()
+        if (version !== accountVersion) return
+        restoreCandidate = restoreBackup(text)
         render()
       }
       return
@@ -645,13 +855,11 @@ document.addEventListener('change', async (event) => {
         (!Number.isInteger(value) || Number(value) < 0 || Number(value) > 100)
       )
         throw new Error('新词数量须为 0 至 100 的整数。')
-      await change((s) => ({
-        ...s,
-        settings: { ...s.settings, [key]: value, ...(key === 'bookId' ? { unit: 'all' } : {}) },
-      }))
+      await change('settings', { [key]: value, ...(key === 'bookId' ? { unit: 'all' } : {}) })
       render()
     }
   } catch (error) {
+    if (version !== accountVersion) return
     toast((error as Error).message, true)
     render()
   }
@@ -660,7 +868,7 @@ document.addEventListener(
   'toggle',
   (event) => {
     const panel = event.target as HTMLDetailsElement
-    if (panel.id === 'paste-panel') pasteOpen = panel.open
+    if (panel.id === 'paste-panel' && panel.isConnected) pasteOpen = panel.open
   },
   true,
 )
@@ -699,42 +907,82 @@ document.addEventListener('keydown', (event) => {
 })
 window.addEventListener('hashchange', () => {
   clearPlayback()
-  if (route() === 'study') setTask()
+  if (route() === 'study' && !sync?.pending) setTask()
   render()
 })
 window.addEventListener('pagehide', stopSpeech)
 window.speechSynthesis?.addEventListener('voiceschanged', () => {
   if (route() === 'settings' && !playing) render()
 })
-channel?.addEventListener('message', async () => {
-  if (busy) return
-  state = await loadState()
-  toast('学习档案已在其他页面更新，当前页面已同步。')
-  if (route() === 'study') setTask()
+window.addEventListener('online', () => {
+  void refreshArchive()
+})
+window.addEventListener('offline', () => {
+  connected = false
   render()
 })
+window.addEventListener('focus', () => {
+  void refreshArchive()
+})
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) void refreshArchive()
+})
 setInterval(() => {
-  if (route() === 'today' && !busy) render()
-  if (route() === 'study' && !task && !busy) {
-    const next = nextTask(state, new Date(), blocked)
-    if (next) {
-      setTask()
-      render()
-    }
-  }
+  if (!document.hidden) void refreshArchive()
 }, 15000)
-try {
-  const response = await fetch('/data/catalog.json')
-  if (response.ok) catalog = await response.json()
-} catch {
-  /* Imported books remain usable without the catalog. */
+async function disableOfflineShell() {
+  if (!('serviceWorker' in navigator)) return
+  const ours = (url: string) =>
+    new URL(url).origin === location.origin && new URL(url).pathname === '/sw.js'
+  const controlled =
+    navigator.serviceWorker.controller && ours(navigator.serviceWorker.controller.scriptURL)
+  for (const registration of await navigator.serviceWorker.getRegistrations())
+    if (
+      [registration.active, registration.waiting, registration.installing].some(
+        (worker) => worker && ours(worker.scriptURL),
+      )
+    )
+      await registration.unregister()
+  if ('caches' in window)
+    for (const key of await caches.keys())
+      if (key.startsWith('word-review-shell-')) await caches.delete(key)
+  if (controlled && !sessionStorage.getItem('word-offline-upgrade')) {
+    sessionStorage.setItem('word-offline-upgrade', '1')
+    location.reload()
+    return true
+  }
+  if (!controlled) sessionStorage.removeItem('word-offline-upgrade')
+  return false
 }
 try {
-  state = await loadState()
-  if (route() === 'study') setTask()
-  render()
+  if (!(await disableOfflineShell())) {
+    try {
+      const old = await loadState()
+      if (old.books.length || old.words.length) legacy = old
+    } catch {
+      /* Legacy storage can be disabled without blocking server accounts. */
+    }
+    const response = await fetch('/data/catalog.json', { cache: 'no-store' })
+    if (response.ok) catalog = await response.json()
+    try {
+      user = (await api('me')).user
+      if (!user!.mustChange) {
+        sync = new ArchiveSync(user!.id)
+        await sync.recover()
+        state = sync.state
+        connected = true
+        await refreshUsers()
+        if (route() === 'study') setTask()
+      }
+    } catch (error) {
+      if (!(error instanceof ApiFailure && error.status === 401))
+        toast((error as Error).message, true)
+      if (error instanceof ApiFailure && error.status === 401) resetAccount()
+    }
+    render()
+  }
 } catch (error) {
-  root.innerHTML = `<main class="centered"><h1>学习档案暂时无法打开</h1><p>${esc((error as Error).message)}</p><p>请刷新重试。原有数据不会被空档案覆盖。</p></main>`
+  resetAccount()
+  toast('无法连接服务：' + (error as Error).message, true)
+  render()
 }
-if (import.meta.env.PROD && 'serviceWorker' in navigator)
-  navigator.serviceWorker.register('/sw.js').catch(() => {})

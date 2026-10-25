@@ -1,17 +1,38 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { spawn } from 'node:child_process'
+import { spawn, spawnSync } from 'node:child_process'
 import { once } from 'node:events'
 import { createHash } from 'node:crypto'
+import { mkdtemp, rm } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { Store } from '../server/app.ts'
+import { connect } from 'node:net'
 
 test(
   'portable server serves exact catalog assets and rejects paths outside dist',
   { timeout: 15000 },
   async () => {
-    const child = spawn(process.execPath, ['scripts/serve.mjs', '--port', '0', '--no-browser'], {
-      windowsHide: true,
-      stdio: ['ignore', 'pipe', 'pipe'],
-    })
+    const directory = await mkdtemp(join(tmpdir(), 'word-portable-'))
+    const uninitialized = spawnSync(
+      process.execPath,
+      ['scripts/serve.mjs', '--port', '0', '--no-browser', '--data-dir', directory],
+      { windowsHide: true, encoding: 'utf8', timeout: 5000 },
+    )
+    assert.equal(uninitialized.status, 1)
+    assert.match(uninitialized.stderr, /--init-admin/)
+    assert.doesNotMatch(uninitialized.stdout, /http:\/\//)
+    const store = new Store(directory)
+    await store.createUser('admin', 'portable-test-password', true, false)
+    store.close()
+    const child = spawn(
+      process.execPath,
+      ['scripts/serve.mjs', '--port', '0', '--no-browser', '--data-dir', directory],
+      {
+        windowsHide: true,
+        stdio: ['ignore', 'pipe', 'pipe'],
+      },
+    )
     let output = ''
     child.stdout.setEncoding('utf8')
     child.stderr.setEncoding('utf8')
@@ -63,12 +84,29 @@ test(
       assert.equal((await fetch(url + '%00')).status, 400)
       assert.equal((await fetch(url + '%zz')).status, 400)
       assert.equal((await fetch(url, { method: 'POST' })).status, 405)
+      await new Promise((done) => {
+        const parsed = new URL(url)
+        const socket = connect(Number(parsed.port), '127.0.0.1', () =>
+          socket.write(
+            `GET http://[ HTTP/1.1\r\nHost: ${parsed.host}\r\nConnection: close\r\n\r\n`,
+          ),
+        )
+        socket.on('data', () => {})
+        socket.once('error', done)
+        socket.once('close', done)
+      })
+      assert.equal(
+        (await fetch(url)).status,
+        200,
+        'Malformed anonymous requests must not terminate the service',
+      )
     } finally {
       if (child.exitCode === null) {
         const stopped = once(child, 'close')
         child.kill()
         await stopped
       }
+      await rm(directory, { recursive: true, force: true })
     }
   },
 )

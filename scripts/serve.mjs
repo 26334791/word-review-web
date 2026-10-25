@@ -1,23 +1,12 @@
-import { createServer } from 'node:http'
-import { readFile, realpath } from 'node:fs/promises'
-import { resolve, relative, isAbsolute, extname, sep } from 'node:path'
+import { Store, createApp } from '../server-dist/app.mjs'
+import { realpath } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
+import { resolve } from 'node:path'
 import { parseArgs } from 'node:util'
 import { spawn } from 'node:child_process'
-
-const types = {
-  '.html': 'text/html; charset=utf-8',
-  '.js': 'text/javascript; charset=utf-8',
-  '.css': 'text/css; charset=utf-8',
-  '.json': 'application/json; charset=utf-8',
-  '.webmanifest': 'application/manifest+json',
-  '.svg': 'image/svg+xml',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.csv': 'text/csv; charset=utf-8',
-  '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-  '.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-}
+import { createInterface } from 'node:readline/promises'
+import { Writable } from 'node:stream'
+import { networkInterfaces } from 'node:os'
 
 async function main() {
   if (Number(process.versions.node.split('.')[0]) < 24)
@@ -25,95 +14,110 @@ async function main() {
   const { values } = parseArgs({
     options: {
       'no-browser': { type: 'boolean' },
+      'init-admin': { type: 'boolean' },
       port: { type: 'string', default: '5173' },
+      host: { type: 'string', default: '0.0.0.0' },
+      'data-dir': { type: 'string' },
       help: { type: 'boolean' },
     },
   })
   if (values.help) {
-    console.log('node scripts/serve.mjs [--no-browser] [--port 5173]')
+    console.log(
+      'node scripts/serve.mjs [--init-admin] [--no-browser] [--port 5173] [--host 0.0.0.0] [--data-dir 路径]',
+    )
     return
   }
   const port = Number(values.port)
   if (!/^\d+$/.test(values.port) || !Number.isInteger(port) || port < 0 || port > 65535)
-    throw new Error('端口须为0–65535的整数（0表示自动分配）。')
-  const root = await realpath(fileURLToPath(new URL('../dist/', import.meta.url)))
-  await readFile(resolve(root, 'index.html'))
-  const inside = (file) => {
-    const path = relative(root, file)
-    return path !== '..' && !path.startsWith('..' + sep) && !isAbsolute(path)
-  }
-  const server = createServer(async (req, res) => {
-    if (!['GET', 'HEAD'].includes(req.method)) {
-      res.writeHead(405, { Allow: 'GET, HEAD' })
-      res.end()
-      return
-    }
+    throw new Error('端口须为 0–65535 的整数。')
+  const store = new Store(
+    values['data-dir']
+      ? resolve(values['data-dir'])
+      : fileURLToPath(new URL('../data/', import.meta.url)),
+  )
+  if (values['init-admin']) {
     try {
-      let path
-      try {
-        path = decodeURIComponent(new URL(req.url, 'http://localhost').pathname)
-      } catch {
-        res.writeHead(400)
-        res.end()
-        return
-      }
-      if (path.includes('\0')) {
-        res.writeHead(400)
-        res.end()
-        return
-      }
-      const candidate = resolve(root, '.' + (path.endsWith('/') ? path + 'index.html' : path))
-      if (!inside(candidate)) {
-        res.writeHead(403)
-        res.end()
-        return
-      }
-      const file = await realpath(candidate)
-      if (!inside(file)) {
-        res.writeHead(403)
-        res.end()
-        return
-      }
-      const body = await readFile(file)
-      res.writeHead(200, {
-        'Content-Type': types[extname(file)] ?? 'application/octet-stream',
-        'Content-Length': body.length,
-        'Cache-Control': 'no-cache',
-        'X-Content-Type-Options': 'nosniff',
+      if (store.initialized()) throw new Error('管理员已初始化，请登录后在账号管理页操作。')
+      if (!process.stdin.isTTY) throw new Error('--init-admin 须在本机交互式终端运行。')
+      let hidden = false
+      const output = new Writable({
+        write(chunk, _encoding, done) {
+          if (!hidden) process.stdout.write(chunk)
+          done()
+        },
       })
-      res.end(req.method === 'HEAD' ? undefined : body)
-    } catch (error) {
-      res.writeHead(['ENOENT', 'ENOTDIR', 'EISDIR'].includes(error.code) ? 404 : 500)
-      res.end()
+      const input = createInterface({ input: process.stdin, output, terminal: true })
+      try {
+        const username = await input.question('管理员账号：')
+        process.stdout.write('管理员密码（至少 10 个字符，不回显）：')
+        hidden = true
+        const password = await input.question('')
+        hidden = false
+        process.stdout.write('\n再次输入密码：')
+        hidden = true
+        const confirmation = await input.question('')
+        hidden = false
+        process.stdout.write('\n')
+        if (password !== confirmation) throw new Error('两次密码不一致。')
+        await store.createUser(username.trim(), password, true, false)
+        console.log('管理员已创建。请再次运行启动命令，开放局域网服务。')
+      } finally {
+        input.close()
+      }
+    } finally {
+      store.close()
     }
-  })
+    return
+  }
+  let server
+  try {
+    server = createApp(store, await realpath(fileURLToPath(new URL('../dist/', import.meta.url))))
+  } catch (error) {
+    store.close()
+    throw error
+  }
   await new Promise((ready, reject) => {
     server.once('error', reject)
-    server.listen(port, '127.0.0.1', ready)
+    server.listen(port, values.host, ready)
   })
-  const url = `http://127.0.0.1:${server.address().port}/`
+  const local = values.host === '0.0.0.0' ? '127.0.0.1' : values.host
+  const address = local.includes(':') ? '[' + local + ']' : local
+  const url = `http://${address}:${server.address().port}/`
   console.log(`单词日课已启动：${url}\n保持此窗口运行，按 Ctrl+C 停止。`)
+  if (values.host === '0.0.0.0')
+    for (const entries of Object.values(networkInterfaces()))
+      for (const entry of entries ?? [])
+        if (entry.family === 'IPv4' && !entry.internal)
+          console.log(`局域网地址：http://${entry.address}:${server.address().port}/`)
   for (const signal of ['SIGINT', 'SIGTERM'])
-    process.on(signal, () => server.close(() => process.exit()))
+    process.on(signal, () =>
+      server.close(() => {
+        store.close()
+        process.exit()
+      }),
+    )
   if (!values['no-browser']) {
     const command =
       process.platform === 'win32' ? 'cmd.exe' : process.platform === 'darwin' ? 'open' : 'xdg-open'
-    const args = process.platform === 'win32' ? ['/d', '/c', 'start', '""', url] : [url]
-    const browser = spawn(command, args, {
-      windowsHide: true,
-      windowsVerbatimArguments: process.platform === 'win32',
-      stdio: 'ignore',
-    })
-    browser.on('error', () => console.error(`浏览器未能自动打开，请手动访问 ${url}`))
+    const browser = spawn(
+      command,
+      process.platform === 'win32' ? ['/d', '/c', 'start', '""', url] : [url],
+      {
+        windowsHide: true,
+        windowsVerbatimArguments: process.platform === 'win32',
+        stdio: 'ignore',
+      },
+    )
+    browser.on('error', () => console.error(`浏览器未能自动打开，请访问 ${url}`))
     browser.on('exit', (code) => {
-      if (code) console.error(`浏览器未能自动打开，请手动访问 ${url}`)
+      if (code) console.error(`浏览器未能自动打开，请访问 ${url}`)
     })
   }
 }
 main().catch((error) => {
   console.error(
     error.code === 'EADDRINUSE'
-      ? '端口已被占用。请打开已有页面，或加 --port 5174 启动另一实例。'
+      ? '端口已被占用，请打开已有页面，或使用 --port 5174。'
       : error.message,
   )
   process.exitCode = 1

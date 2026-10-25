@@ -34,6 +34,7 @@ try {
         [IO.Directory]::CreateDirectory((Join-Path $portableDir 'scripts')) | Out-Null
         [IO.Directory]::CreateDirectory($runtimeDir) | Out-Null
         Copy-Item -LiteralPath 'dist' -Destination (Join-Path $portableDir 'dist') -Recurse
+        Copy-Item -LiteralPath 'server-dist' -Destination (Join-Path $portableDir 'server-dist') -Recurse
         Copy-Item -LiteralPath 'scripts/serve.mjs' -Destination (Join-Path $portableDir 'scripts/serve.mjs')
         Copy-Item -LiteralPath 'docs/portable.md' -Destination (Join-Path $portableDir 'README.md')
         Copy-Item -LiteralPath 'LICENSE' -Destination (Join-Path $portableDir 'LICENSE')

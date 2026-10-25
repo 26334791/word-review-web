@@ -23,3 +23,5 @@ jobs:
       - run: npm run format:check
       - run: npm run build
       - run: npm test
+      - name: Verify bundled native runtime and launcher without npm dependencies
+        run: node tests/bundled-smoke.mjs
